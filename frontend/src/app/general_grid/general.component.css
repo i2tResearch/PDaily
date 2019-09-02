@@ -1,0 +1,146 @@
+.container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  /*grid-auto-rows: 100px;*/
+  grid-template-areas:
+    "a b c"
+    "d d d"
+    "e f g";
+  align-items: start;
+}
+
+.patient {
+  grid-area: a;
+}
+
+.reports {
+  grid-area: b;
+}
+
+.doctor {
+  grid-area: c;
+}
+
+.schedule {
+  grid-area: d;
+}
+
+.medicine {
+  grid-area: e;
+}
+
+.blank {
+  grid-area: f;
+}
+
+.editables {
+  grid-area: g;
+  background: #555354;
+  color: white;
+}
+
+.patient_container{
+  display: grid;
+  grid-template-columns: 120px 300px;
+  /*grid-auto-rows: 100px;*/
+  grid-template-areas:
+    "a b"
+    "a c"
+    "a d"
+    "a e";
+  align-items: center;
+}
+
+.medicine_container{
+  display: grid;
+  grid-template-columns: 300px 120px;
+  /*grid-auto-rows: 100px;*/
+  grid-template-areas:
+    "b a"
+    "c a"
+    "d a"
+    "e a";
+  align-items: center;
+  background: #555354;
+}
+
+.doctor_container{
+  display: grid;
+  grid-template-columns: 300px 120px;
+  /*grid-auto-rows: 100px;*/
+  grid-template-areas:
+    "b a"
+    "c a"
+    "d a"
+    "e a";
+  align-items: center;
+}
+.patient_contA{
+  grid-area: a;
+  background: #5DBCD2;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 40px;
+}
+.patient_infB{
+  grid-area: b;
+  color: white;
+}
+.patient_infC{
+  grid-area: c;
+  color: white;
+}
+.patient_infD{
+  grid-area: d;
+  color: white;
+}
+.patient_infE{
+  grid-area: e;
+  color: white;
+}
+
+.reports_container{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 1px;
+  grid-row-gap: 5px;
+  align-items: center;
+}
+
+.circle_comida{
+  background: #C4A881;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 40px;
+}
+
+.circle_levodopa{
+  background: #5DBCD2;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 40px;
+}
+
+
+.circle_otras{
+  background: #C165A1;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 40px;
+}
+
+.circle_eventos{
+  background: #0C3D73;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 40px;
+}
+
+.circle_rutinas{
+  background: #DA718A;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 40px;
+}
