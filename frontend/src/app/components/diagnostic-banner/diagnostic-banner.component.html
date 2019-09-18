@@ -1,0 +1,53 @@
+<div class="container">
+
+  <!-- INFORMACION DE LOS EVENTOS  -->
+
+  <div *ngFor="let event of events" [ngStyle]="{'margin':'auto 20% auto auto'}">
+    <img  [id] = "event.label" class="image"
+          [src] = "event.icon" width="65" [ngStyle]="{'background':event.color}"
+          (mouseover)="mouseOverEvent(event)"
+          (mouseleave)="mouseLeaveEvent(event)"
+          (click)="actionClickEvents(event)">
+    <p style="text-align: center"> {{event.label}}</p>
+  </div>
+
+
+  <!-- INFORMACION DEL MEDICO  -->
+
+<!--  <div class="info-container">-->
+<!--    <div>-->
+<!--      <p style="padding-top: 15px">Dr. {{doctor.name}}</p>-->
+<!--      <p> Configurar cuenta </p>-->
+<!--      <p> Cambiar cuenta </p>-->
+<!--      <p> Cerrar sesion </p>-->
+<!--    </div>-->
+<!--    <div style="margin-left: auto; padding-right: 20px">-->
+<!--      <img src="assets/medico2.png" width="100">-->
+<!--    </div>-->
+<!--  </div>-->
+
+  <!-- INFORMACION DEL PACIENTE  -->
+
+  <div class="info-container">
+    <div>
+      <p style="padding-top: 15px">{{patient.name}}</p>
+      <p> {{patient.document}} </p>
+      <p> {{patient.age}} años </p>
+      <p> {{patient.gender}} </p>
+    </div>
+    <div style="margin-left: auto; padding-right: 20px">
+      <img src="assets/paciente2.png" width="100">
+    </div>
+  </div>
+
+</div>
+<div class="flex-container" style="margin: 2% 15% 0% 15%" *ngIf="eventActive">
+  <div *ngFor="let event of eventsType" [ngStyle]="{'margin':'auto auto auto auto', 'width':'14.28%'}">
+    <img  [id] = "event.label" class="image"
+          [src] = "event.icon" width="45" [ngStyle]="{'background':event.color, 'margin-left':'25%'}"
+          (mouseover)="mouseOverEvent(event)"
+          (mouseleave)="mouseLeaveEvent(event)"
+          (click)="actionClickEvents(event)">
+    <p style="text-align: center"> {{event.label}}</p>
+  </div>
+</div>

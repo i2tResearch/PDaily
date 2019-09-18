@@ -1,0 +1,26 @@
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(24, 4.1666666%);
+  grid-template-rows: repeat(1, 30px);
+  /*grid-column-gap: 1px;*/
+  /*grid-row-gap: 1px;*/
+  border: 1px solid white;
+}
+
+.general-container {
+  display: grid;
+  grid-template-columns: 5% 5% 90%;
+  margin-right: 8%;
+  margin-top: 4%;
+
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
