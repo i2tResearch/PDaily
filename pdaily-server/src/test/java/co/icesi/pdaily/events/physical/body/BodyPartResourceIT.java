@@ -34,6 +34,7 @@ public class BodyPartResourceIT implements IDataSetDependent {
 				.get( "/events/physical/body_part" )
 				.then()
 				.statusCode( 200 )
+				.log().body()
 				.body(
 						"size()", greaterThan( 0 )
 				);

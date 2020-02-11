@@ -4,6 +4,7 @@ import static co.haruk.core.domain.model.guards.Guards.requireNonNull;
 
 import java.util.List;
 
+import javax.enterprise.context.Dependent;
 import javax.inject.Inject;
 
 import co.icesi.pdaily.events.physical.domain.model.PhysicalEvent;
@@ -12,6 +13,7 @@ import co.icesi.pdaily.events.physical.infrastructure.persistence.PhysicalEventR
 import co.icesi.pdaily.events.physical.injury.type.domain.model.InjuryType;
 import co.icesi.pdaily.events.physical.injury.type.infrastructure.persistence.InjuryTypeRepository;
 
+@Dependent
 public class PhysicalEventViewBuilder {
 	@Inject
 	PhysicalEventRepository repository;

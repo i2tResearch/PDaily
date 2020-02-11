@@ -8,7 +8,7 @@ import javax.persistence.Embeddable;
 
 @Embeddable
 public class Intensity implements Serializable {
-	public final int MAX_INTENSITY = 10;
+	private static final int MAX_INTENSITY = 10;
 
 	@Column
 	private int intensity;

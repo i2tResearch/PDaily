@@ -30,6 +30,7 @@ public class PhysicalEvent extends HarukTenantEntity<PhysicalEventId> {
 	@AttributeOverride(name = "id", column = @Column(name = "patient_id"))
 	private PatientId patientId;
 	@Embedded
+	@AttributeOverride(name = "intensity", column = @Column(name = "intensity"))
 	private Intensity intensity;
 	@Embedded
 	@AttributeOverride(name = "id", column = @Column(name = "injury_type_id"))

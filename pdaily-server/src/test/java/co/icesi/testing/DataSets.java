@@ -49,7 +49,8 @@ public enum DataSets implements IDataSet {
 	MARKETING_CAMPAIGN( "datasets/sales/activities_marketing_campaign.sql" ),
 	ACTIVITIES( "datasets/sales/activities.sql", PURPOSE, MARKETING_CAMPAIGN, TASK, CUSTOMER, SALES_REP ),
 	BODY_PARTS( "datasets/events/body_parts.sql" ),
-	INJURY_TYPES( "datasets/events/injury_type.sql" );
+	INJURY_TYPES( "datasets/events/injury_type.sql" ),
+	PHYSICAL_EVENTS( "datasets/events/physical_event.sql", BODY_PARTS, INJURY_TYPES );
 
 	private String fileName;
 	private IDataSet[] deps;

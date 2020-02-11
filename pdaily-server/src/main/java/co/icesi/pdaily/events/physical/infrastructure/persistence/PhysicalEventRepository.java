@@ -4,6 +4,8 @@ import static co.haruk.core.domain.model.guards.Guards.requireNonNull;
 
 import java.util.List;
 
+import javax.enterprise.context.ApplicationScoped;
+
 import co.haruk.core.domain.model.persistence.QueryParameter;
 import co.haruk.core.infrastructure.persistence.jpa.JPARepository;
 import co.icesi.pdaily.business.structure.patient.domain.model.PatientId;
@@ -13,6 +15,7 @@ import co.icesi.pdaily.events.physical.domain.model.detail.BodyPartDetail;
 import co.icesi.pdaily.events.physical.domain.model.view.BodyPartDetailReadView;
 import co.icesi.pdaily.events.physical.domain.model.view.PhysicalEventReadView;
 
+@ApplicationScoped
 public class PhysicalEventRepository extends JPARepository<PhysicalEvent> {
 
 	public List<BodyPartDetailReadView> findDetailsAsReadView(PhysicalEventId eventId) {

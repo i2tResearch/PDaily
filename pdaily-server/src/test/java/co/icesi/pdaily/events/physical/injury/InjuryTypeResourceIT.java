@@ -34,6 +34,7 @@ public class InjuryTypeResourceIT implements IDataSetDependent {
 				.get( "/events/physical/injury" )
 				.then()
 				.statusCode( 200 )
+				.log().body()
 				.body(
 						"size()", greaterThan( 0 )
 				);

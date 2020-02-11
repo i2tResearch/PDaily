@@ -31,5 +31,5 @@ CREATE TABLE IF NOT EXISTS event_physical_body_details
     id                  UUID        NOT NULL,
     physical_event_id   UUID        NOT NULL,
     body_part_id        UUID        NOT NULL,
-    PRIMARY KEY (physical_event_id, id)
-) WITH "template=partitioned, affinity_key=tenant_id, atomicity=TRANSACTIONAL_SNAPSHOT";
+    PRIMARY KEY (id)
+)  WITH "template=partitioned, atomicity=TRANSACTIONAL_SNAPSHOT";
