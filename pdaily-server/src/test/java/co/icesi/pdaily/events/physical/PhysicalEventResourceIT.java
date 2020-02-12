@@ -75,7 +75,7 @@ public class PhysicalEventResourceIT implements IDataSetDependent {
 		dto.bodyDetails = List.of( bodyPart );
 		given().contentType( MediaType.APPLICATION_JSON )
 				.body( dto )
-				.log().body()
+				.log().all()
 				.post( "/event/physical" )
 				.then()
 				.statusCode( 200 )

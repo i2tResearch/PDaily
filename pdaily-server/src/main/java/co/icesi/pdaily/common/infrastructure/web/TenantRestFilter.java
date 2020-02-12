@@ -18,7 +18,7 @@ import co.icesi.pdaily.common.model.tenancy.TenantId;
 @Provider
 @PreMatching
 public class TenantRestFilter implements ContainerRequestFilter, ContainerResponseFilter {
-	private static final String TENANT_HEADER = "haruk-tenant";
+	private static final String TENANT_HEADER = "pdaily-tenant";
 
 	@Override
 	public void filter(ContainerRequestContext requestContext) {

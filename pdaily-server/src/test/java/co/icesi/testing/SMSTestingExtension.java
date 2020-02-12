@@ -20,6 +20,6 @@ public class SMSTestingExtension implements BeforeAllCallback {
 
 	private void initRestAssured() {
 		RestAssured.requestSpecification = new RequestSpecBuilder()
-				.addHeader( "haruk-tenant", AccountTesting.ACCOUNT_ID ).build();
+				.addHeader( "pdaily-tenant", AccountTesting.ACCOUNT_ID ).build();
 	}
 }
