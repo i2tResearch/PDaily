@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test;
 import co.haruk.core.domain.model.entity.Identity;
 import co.haruk.core.testing.cdi.ICDIContainerDependent;
 import co.haruk.core.testing.data.SQLLoader;
-import co.icesi.pdaily.common.infrastructure.session.HarukSession;
+import co.icesi.pdaily.common.infrastructure.session.PdailySession;
 import co.icesi.pdaily.common.model.tenancy.TenantId;
 import co.icesi.testing.SMSTest;
 
@@ -36,7 +36,7 @@ class TenantEntityListenerIT implements ICDIContainerDependent {
 	void prePersist() {
 		final TenantId tenant = TenantId.of( Identity.generateNew() );
 		var entity = TestTenantEntity.of( "TESTING" );
-		HarukSession.setCurrentTenant( tenant );
+		PdailySession.setCurrentTenant( tenant );
 		var saved = repository.create( entity );
 		assertEquals( tenant, saved.tenantId() );
 	}
@@ -45,7 +45,7 @@ class TenantEntityListenerIT implements ICDIContainerDependent {
 	@DisplayName("Assigns tenant to entity named query")
 	void tenantInNamedQuery() {
 		final TenantId tenant = TenantId.of( Identity.generateNew() );
-		HarukSession.setCurrentTenant( tenant );
+		PdailySession.setCurrentTenant( tenant );
 		var list = repository.findWithQuery();
 		assertNotNull( list );
 	}

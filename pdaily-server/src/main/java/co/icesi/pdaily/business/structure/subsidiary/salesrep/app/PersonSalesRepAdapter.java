@@ -15,7 +15,7 @@ import co.icesi.pdaily.business.structure.subsidiary.salesrep.domain.model.Sales
 import co.icesi.pdaily.business.structure.subsidiary.salesrep.domain.model.SalesRepId;
 import co.icesi.pdaily.business.structure.subsidiary.salesrep.domain.model.view.SalesRepReadView;
 import co.icesi.pdaily.business.structure.subsidiary.salesrep.infrastructure.persistence.SalesRepRepository;
-import co.icesi.pdaily.common.infrastructure.session.HarukSession;
+import co.icesi.pdaily.common.infrastructure.session.PdailySession;
 import co.icesi.pdaily.subscription.account.user.app.UserAppService;
 import co.icesi.pdaily.subscription.account.user.domain.model.UserId;
 
@@ -42,7 +42,7 @@ class UserSalesRepAdapter {
 	}
 
 	List<SalesRepReadView> findAvailableUsersForSubsidiary(SubsidiaryId subsidiaryId) {
-		final var users = userAppService.findForAccount( HarukSession.currentTenant().text() );
+		final var users = userAppService.findForAccount( PdailySession.currentTenant().text() );
 		// Gets sales reps ids
 		final var reps = repository.findForSubsidiary( subsidiaryId ).stream().map( it -> it.id().text() )
 				.collect( Collectors.toList() );

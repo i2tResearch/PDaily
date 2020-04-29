@@ -10,13 +10,13 @@ import javax.persistence.Table;
 
 import co.haruk.core.domain.model.entity.PlainName;
 import co.icesi.pdaily.common.model.Reference;
-import co.icesi.pdaily.common.model.tenancy.HarukTenantEntity;
+import co.icesi.pdaily.common.model.tenancy.PdailyTenantEntity;
 
 @Entity
 @Table(name = "bs_business_units")
 @NamedQuery(name = BusinessUnit.findByIntReference, query = "SELECT f FROM BusinessUnit f WHERE UPPER(f.reference.text) = UPPER(:reference) AND f.tenant = :company")
 @NamedQuery(name = BusinessUnit.findByName, query = "SELECT f FROM BusinessUnit f WHERE UPPER(f.name.name) = UPPER(:name) AND f.tenant = :company")
-public class BusinessUnit extends HarukTenantEntity<BusinessUnitId> {
+public class BusinessUnit extends PdailyTenantEntity<BusinessUnitId> {
 	private static final String PREFIX = "BusinessUnit.";
 	public static final String findByIntReference = PREFIX + "findByIntReference";
 	public static final String findByName = PREFIX + "findByName";

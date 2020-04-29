@@ -9,7 +9,7 @@ import javax.ws.rs.container.ContainerResponseFilter;
 import javax.ws.rs.container.PreMatching;
 import javax.ws.rs.ext.Provider;
 
-import co.icesi.pdaily.common.infrastructure.session.HarukSession;
+import co.icesi.pdaily.common.infrastructure.session.PdailySession;
 import co.icesi.pdaily.common.model.tenancy.TenantId;
 
 /**
@@ -24,15 +24,15 @@ public class TenantRestFilter implements ContainerRequestFilter, ContainerRespon
 	public void filter(ContainerRequestContext requestContext) {
 		final String tenantId = requestContext.getHeaders().getFirst( TENANT_HEADER );
 		if ( tenantId != null ) {
-			HarukSession.setCurrentTenant( TenantId.of( tenantId ) );
+			PdailySession.setCurrentTenant( TenantId.of( tenantId ) );
 		}
 	}
 
 	@Override
 	public void filter(
 			ContainerRequestContext requestContext, ContainerResponseContext responseContext) throws IOException {
-		if ( HarukSession.hasTenant() ) {
-			HarukSession.resetTenant();
+		if ( PdailySession.hasTenant() ) {
+			PdailySession.resetTenant();
 		}
 	}
 }

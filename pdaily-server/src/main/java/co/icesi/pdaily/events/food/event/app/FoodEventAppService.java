@@ -21,7 +21,7 @@ public class FoodEventAppService {
 	public FoodEventDTO saveFoodEvent(FoodEventDTO dto) {
 		final var changed = dto.toFoodEvent();
 		FoodEvent saved;
-		if ( changed.isPersistent() )  {
+		if ( changed.isPersistent() ) {
 			var original = repository.findOrFail( changed.id() );
 			original.setDate( changed.date() );
 			saved = repository.update( original );
@@ -34,7 +34,7 @@ public class FoodEventAppService {
 
 	public FoodEventDTO findOrFail(String id) {
 		final var found = repository.findOrFail( FoodEventId.ofNotNull( id ) );
-	 	return FoodEventDTO.of( found );
+		return FoodEventDTO.of( found );
 	}
 
 	public List<FoodEventDTO> findByPatient(String patientId) {

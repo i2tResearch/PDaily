@@ -13,7 +13,7 @@ import javax.persistence.Table;
 import co.haruk.core.domain.model.entity.PlainName;
 import co.haruk.core.domain.model.guards.Guards;
 import co.icesi.pdaily.common.model.EmailAddress;
-import co.icesi.pdaily.common.model.HarukEntity;
+import co.icesi.pdaily.common.model.PdailyEntity;
 import co.icesi.pdaily.subscription.account.domain.model.AccountId;
 import co.icesi.pdaily.subscription.license.domain.model.LicenseId;
 
@@ -27,7 +27,7 @@ import co.icesi.pdaily.subscription.license.domain.model.LicenseId;
 @NamedQuery(name = User.findByEmailAndAccount, query = "SELECT p FROM User p WHERE p.email = :email and p.accountId = :accountId")
 @NamedQuery(name = User.existsEmail, query = "SELECT COUNT(p.id) FROM User p WHERE p.email = :email")
 @NamedQuery(name = User.existsUsername, query = "SELECT COUNT(p.id) FROM User p WHERE p.username = :username")
-public class User extends HarukEntity<UserId> {
+public class User extends PdailyEntity<UserId> {
 	private static final String PREFIX = "User.";
 	public static final String findByAccount = PREFIX + "findByAccount";
 	public static final String findByUserName = PREFIX + "findByUserName";

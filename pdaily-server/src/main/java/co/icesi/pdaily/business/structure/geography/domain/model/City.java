@@ -11,7 +11,7 @@ import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 import co.haruk.core.domain.model.entity.PlainName;
-import co.icesi.pdaily.common.model.HarukEntity;
+import co.icesi.pdaily.common.model.PdailyEntity;
 import co.icesi.pdaily.common.model.Reference;
 
 /**
@@ -24,7 +24,7 @@ import co.icesi.pdaily.common.model.Reference;
 @NamedQuery(name = City.countByState, query = "SELECT COUNT(c.id) FROM City c WHERE c.state = :state")
 @NamedQuery(name = City.findByState, query = "SELECT c FROM City c WHERE c.state = :state ORDER BY name.name")
 @NamedQuery(name = City.findByIdTextView, query = "SELECT new co.icesi.pdaily.business.structure.geography.domain.model.view.CityTextView(c.id.id,c.name.name,s.id.id,s.name.name,co.id.id,co.name.name) FROM City c INNER JOIN State s ON c.state = s.id INNER JOIN Country co ON s.country = co.id WHERE c.id = :cityId")
-public class City extends HarukEntity<CityId> {
+public class City extends PdailyEntity<CityId> {
 	private static final String PREFIX = "City.";
 	public static final String findByName = PREFIX + "findByName";
 	public static final String findByReference = PREFIX + "findByReference";

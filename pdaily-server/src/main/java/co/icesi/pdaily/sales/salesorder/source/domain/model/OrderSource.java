@@ -9,7 +9,7 @@ import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 import co.haruk.core.domain.model.entity.PlainName;
-import co.icesi.pdaily.common.model.tenancy.HarukTenantEntity;
+import co.icesi.pdaily.common.model.tenancy.PdailyTenantEntity;
 
 /**
  * @author cristhiank on 23/12/19
@@ -17,7 +17,7 @@ import co.icesi.pdaily.common.model.tenancy.HarukTenantEntity;
 @Entity
 @Table(name = "sales_order_sources")
 @NamedQuery(name = OrderSource.findByName, query = "SELECT o FROM OrderSource o WHERE o.tenant = :company AND UPPER(o.name) = UPPER(:name)")
-public class OrderSource extends HarukTenantEntity<OrderSourceId> {
+public class OrderSource extends PdailyTenantEntity<OrderSourceId> {
 	private static final String PREFIX = "OrderSource.";
 	public static final String findByName = PREFIX + "findByName";
 

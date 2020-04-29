@@ -16,7 +16,7 @@ import javax.persistence.Table;
 import co.icesi.pdaily.business.structure.businessunit.domain.model.BusinessUnitId;
 import co.icesi.pdaily.business.structure.businessunit.zone.domain.model.ZoneId;
 import co.icesi.pdaily.business.structure.subsidiary.salesrep.domain.model.SalesRepId;
-import co.icesi.pdaily.common.model.tenancy.HarukTenantEntity;
+import co.icesi.pdaily.common.model.tenancy.PdailyTenantEntity;
 
 /**
  * @author cristhiank on 9/12/19
@@ -36,7 +36,7 @@ import co.icesi.pdaily.common.model.tenancy.HarukTenantEntity;
 		"LEFT JOIN Zone z ON z.id = v.zoneId " +
 		"WHERE v.tenant = :company AND v.id.customerId = :customerId")
 @NamedQuery(name = CustomerBusinessView.countForZone, query = "SELECT COUNT(v.id.customerId) FROM CustomerBusinessView v WHERE v.tenant = :company AND v.zoneId = :zoneId")
-public class CustomerBusinessView extends HarukTenantEntity<BusinessViewId> {
+public class CustomerBusinessView extends PdailyTenantEntity<BusinessViewId> {
 	private static final String PREFIX = "CustomerBusinessView.";
 	public static final String findForCustomerAsReadView = PREFIX + "findForCustomerAsReadView";
 	public static final String findByIdAsReadView = PREFIX + "findByIdAsReadView";

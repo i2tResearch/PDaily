@@ -9,7 +9,7 @@ import co.icesi.pdaily.business.structure.customer.contact.role.domain.model.Con
 import co.icesi.pdaily.business.structure.customer.domain.model.CustomerId;
 import co.icesi.pdaily.common.model.EmailAddress;
 import co.icesi.pdaily.common.model.PhoneNumber;
-import co.icesi.pdaily.common.model.tenancy.HarukTenantEntity;
+import co.icesi.pdaily.common.model.tenancy.PdailyTenantEntity;
 
 @Entity
 @Table(name = "bs_contacts")
@@ -23,7 +23,7 @@ import co.icesi.pdaily.common.model.tenancy.HarukTenantEntity;
 		"WHERE c.tenant = :company AND c.id = :id")
 @NamedQuery(name = Contact.countForCustomer, query = "SELECT COUNT(c.id) FROM Contact c WHERE c.tenant = :company AND c.customerId = :customerId")
 @NamedQuery(name = Contact.countForContactRole, query = "SELECT COUNT(c.id) FROM Contact c WHERE c.tenant = :company AND c.roleId = :roleId")
-public class Contact extends HarukTenantEntity<ContactId> {
+public class Contact extends PdailyTenantEntity<ContactId> {
 	private static final String PREFIX = "Contact.";
 	public static final String findByIdAsReadView = PREFIX + "findByIdAsReadView";
 	public static final String findForCustomerAsReadView = PREFIX + "findForCustomerAsReadView";

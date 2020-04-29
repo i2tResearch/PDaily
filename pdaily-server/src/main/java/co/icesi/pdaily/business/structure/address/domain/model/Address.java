@@ -14,7 +14,7 @@ import co.haruk.core.domain.model.guards.Guards;
 import co.icesi.pdaily.business.structure.address.infrastructure.persistence.AddressRepository;
 import co.icesi.pdaily.business.structure.geography.domain.model.CityId;
 import co.icesi.pdaily.common.model.Reference;
-import co.icesi.pdaily.common.model.tenancy.HarukTenantEntity;
+import co.icesi.pdaily.common.model.tenancy.PdailyTenantEntity;
 
 /**
  * @author cristhiank on 2/12/19
@@ -25,7 +25,7 @@ import co.icesi.pdaily.common.model.tenancy.HarukTenantEntity;
 @NamedQuery(name = Address.findMainByReferenced, query = "SELECT a FROM Address a WHERE a.tenant = :company AND a.referencedId = :referenced AND a.main = TRUE")
 @NamedQuery(name = Address.markAllAsSecondary, query = "UPDATE Address a SET a.main = FALSE WHERE a.tenant = :company AND a.referencedId = :referenced AND a.main = TRUE")
 @NamedQuery(name = Address.deleteAllForReferenced, query = "DELETE Address a WHERE a.tenant = :company AND a.referencedId = :referenced")
-public class Address extends HarukTenantEntity<AddressId> {
+public class Address extends PdailyTenantEntity<AddressId> {
 	private static final String PREFIX = "PREFIX";
 	public static final String findAllByReferenced = PREFIX + "findAllByReferenced";
 	public static final String findMainByReferenced = PREFIX + "findMainByReferenced";

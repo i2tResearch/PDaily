@@ -7,10 +7,10 @@ import co.icesi.pdaily.common.model.tenancy.TenantId;
 /**
  * @author cristhiank on 14/11/19
  **/
-public final class HarukSession {
+public final class PdailySession {
 	private static ThreadLocal<TenantId> currentTenant = new ThreadLocal<>();
 
-	private HarukSession() {
+	private PdailySession() {
 	}
 
 	public static boolean hasTenant() {

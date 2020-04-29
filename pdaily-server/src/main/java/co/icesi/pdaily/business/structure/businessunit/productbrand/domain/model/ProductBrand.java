@@ -12,14 +12,14 @@ import javax.persistence.Table;
 
 import co.haruk.core.domain.model.entity.PlainName;
 import co.icesi.pdaily.business.structure.businessunit.domain.model.BusinessUnitId;
-import co.icesi.pdaily.common.model.tenancy.HarukTenantEntity;
+import co.icesi.pdaily.common.model.tenancy.PdailyTenantEntity;
 
 @Entity
 @Table(name = "bs_product_brands")
 @NamedQuery(name = ProductBrand.findByName, query = "SELECT f FROM ProductBrand f WHERE UPPER(f.name.name) = UPPER(:name) AND f.tenant = :company")
 @NamedQuery(name = ProductBrand.findByBusinessUnit, query = "SELECT f FROM ProductBrand f WHERE f.businessUnit = :businessUnit AND f.tenant = :company")
 @NamedQuery(name = ProductBrand.countByBusinessUnit, query = "SELECT COUNT(f.id) FROM ProductBrand f WHERE f.businessUnit = :businessUnit AND f.tenant = :company")
-public class ProductBrand extends HarukTenantEntity<ProductBrandId> {
+public class ProductBrand extends PdailyTenantEntity<ProductBrandId> {
 	private static final String PREFIX = "ProductBrand.";
 	public static final String findByBusinessUnit = PREFIX + "findByBusinessUnit";
 	public static final String countByBusinessUnit = PREFIX + "countByBusinessUnit";

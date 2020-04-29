@@ -10,7 +10,7 @@ import co.icesi.pdaily.business.structure.businessunit.productbrand.domain.model
 import co.icesi.pdaily.business.structure.businessunit.productgroup.domain.model.ProductGroupId;
 import co.icesi.pdaily.business.structure.businessunit.productline.domain.model.ProductLineId;
 import co.icesi.pdaily.common.model.Reference;
-import co.icesi.pdaily.common.model.tenancy.HarukTenantEntity;
+import co.icesi.pdaily.common.model.tenancy.PdailyTenantEntity;
 
 @Entity
 @Table(name = "bs_products")
@@ -35,7 +35,7 @@ import co.icesi.pdaily.common.model.tenancy.HarukTenantEntity;
 @NamedQuery(name = Product.findByBUnitAsReadView, query = "SELECT new co.icesi.pdaily.business.structure.businessunit.product.domain.model.view.ProductReadView(p.id.id, p.name.name, p.reference.text, b.name.name, p.businessUnit.id, r.name.name, p.brandId.id, l.name.name, p.lineId.id, g.name.name, p.groupId.id) "
 		+
 		"FROM Product p INNER JOIN BusinessUnit b ON b.id = p.businessUnit LEFT JOIN ProductBrand r ON r.id = p.brandId LEFT JOIN ProductLine l ON l.id = p.lineId LEFT JOIN ProductGroup g ON g.id = p.groupId WHERE p.businessUnit = :businessUnit AND p.tenant = :company")
-public class Product extends HarukTenantEntity<ProductId> {
+public class Product extends PdailyTenantEntity<ProductId> {
 	private static final String PREFIX = "Product.";
 	public static final String findByReference = PREFIX + "findByReference";
 	public static final String findByName = PREFIX + "findByName";

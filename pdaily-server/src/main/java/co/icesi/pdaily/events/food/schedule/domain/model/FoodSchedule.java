@@ -5,12 +5,12 @@ import static co.haruk.core.domain.model.guards.Guards.requireNonNull;
 import javax.persistence.*;
 
 import co.icesi.pdaily.business.structure.patient.domain.model.PatientId;
-import co.icesi.pdaily.common.model.tenancy.HarukTenantEntity;
+import co.icesi.pdaily.common.model.tenancy.PdailyTenantEntity;
 
 @Entity
 @Table(name = "programming_food_schedules")
 @NamedQuery(name = FoodSchedule.findByPatient, query = "SELECT f FROM FoodSchedule f WHERE f.tenant = :company AND f.patientId = :patient")
-public class FoodSchedule extends HarukTenantEntity<FoodScheduleId> {
+public class FoodSchedule extends PdailyTenantEntity<FoodScheduleId> {
 	private static final String PREFIX = "PhysicalEvent.";
 	public static final String findByPatient = PREFIX + "findByPatient";
 

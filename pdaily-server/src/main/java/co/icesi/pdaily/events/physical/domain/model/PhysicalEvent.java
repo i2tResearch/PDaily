@@ -11,7 +11,7 @@ import javax.persistence.*;
 import co.haruk.core.StreamUtils;
 import co.icesi.pdaily.business.structure.patient.domain.model.PatientId;
 import co.icesi.pdaily.common.model.UTCDateTime;
-import co.icesi.pdaily.common.model.tenancy.HarukTenantEntity;
+import co.icesi.pdaily.common.model.tenancy.PdailyTenantEntity;
 import co.icesi.pdaily.events.physical.domain.model.detail.BodyPartDetail;
 import co.icesi.pdaily.events.physical.injury.type.domain.model.InjuryTypeId;
 
@@ -20,7 +20,7 @@ import co.icesi.pdaily.events.physical.injury.type.domain.model.InjuryTypeId;
 @NamedQuery(name = PhysicalEvent.findByPatientAsReadView, query = "SELECT new co.icesi.pdaily.events.physical.domain.model.view.PhysicalEventReadView(p.id.id, i.id.id, i.name.name, p.initialDate.date, p.finalDate.date, p.intensity.intensity) "
 		+
 		" FROM PhysicalEvent p INNER JOIN InjuryType i ON i.id = p.injuryType WHERE p.patientId = :patientId")
-public class PhysicalEvent extends HarukTenantEntity<PhysicalEventId> {
+public class PhysicalEvent extends PdailyTenantEntity<PhysicalEventId> {
 	private static final String PREFIX = "PhysicalEvent.";
 	public static final String findByPatientAsReadView = PREFIX + "findByPatientAsReadView";
 

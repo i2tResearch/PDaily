@@ -9,7 +9,7 @@ import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 import co.haruk.core.domain.model.entity.PlainName;
-import co.icesi.pdaily.common.model.HarukEntity;
+import co.icesi.pdaily.common.model.PdailyEntity;
 
 /**
  * @author cristhiank on 15/11/19
@@ -17,7 +17,7 @@ import co.icesi.pdaily.common.model.HarukEntity;
 @Entity
 @Table(name = "subs_licenses")
 @NamedQuery(name = License.findByName, query = "SELECT c FROM License c WHERE UPPER(c.name.name) = UPPER(:name)")
-public class License extends HarukEntity<LicenseId> {
+public class License extends PdailyEntity<LicenseId> {
 	private static final String PREFIX = "License.";
 	public static final String findByName = PREFIX + "findByName";
 	@EmbeddedId

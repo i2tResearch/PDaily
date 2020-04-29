@@ -13,7 +13,7 @@ import javax.persistence.Table;
 import co.haruk.core.domain.model.entity.PlainName;
 import co.icesi.pdaily.business.structure.businessunit.domain.model.BusinessUnitId;
 import co.icesi.pdaily.common.model.Reference;
-import co.icesi.pdaily.common.model.tenancy.HarukTenantEntity;
+import co.icesi.pdaily.common.model.tenancy.PdailyTenantEntity;
 
 /**
  * @author cristhiank on 24/11/19
@@ -24,7 +24,7 @@ import co.icesi.pdaily.common.model.tenancy.HarukTenantEntity;
 @NamedQuery(name = Zone.findByReference, query = "SELECT z FROM Zone z WHERE z.tenant = :company AND z.businessUnitId = :businessUnit AND UPPER(z.reference.text) = UPPER(:reference)")
 @NamedQuery(name = Zone.findByBusinessUnit, query = "SELECT z FROM Zone z WHERE z.tenant = :company AND z.businessUnitId = :businessUnit")
 @NamedQuery(name = Zone.countByBusinessUnit, query = "SELECT COUNT(z.id) FROM Zone z WHERE z.tenant = :company AND z.businessUnitId = :businessUnit")
-public class Zone extends HarukTenantEntity<ZoneId> {
+public class Zone extends PdailyTenantEntity<ZoneId> {
 	private static final String PREFIX = "Zone.";
 	public static final String findByReference = PREFIX + "findByReference";
 	public static final String findByName = PREFIX + "findByName";

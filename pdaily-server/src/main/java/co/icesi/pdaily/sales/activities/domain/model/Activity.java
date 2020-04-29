@@ -14,7 +14,7 @@ import co.icesi.pdaily.business.structure.customer.domain.model.CustomerId;
 import co.icesi.pdaily.business.structure.subsidiary.salesrep.domain.model.SalesRepId;
 import co.icesi.pdaily.common.model.Reference;
 import co.icesi.pdaily.common.model.UTCDateTime;
-import co.icesi.pdaily.common.model.tenancy.HarukTenantEntity;
+import co.icesi.pdaily.common.model.tenancy.PdailyTenantEntity;
 import co.icesi.pdaily.sales.activities.domain.model.details.CampaignDetail;
 import co.icesi.pdaily.sales.activities.domain.model.details.TaskDetail;
 import co.icesi.pdaily.sales.activities.purpose.domain.model.PurposeId;
@@ -24,7 +24,7 @@ import co.icesi.pdaily.sales.activities.purpose.domain.model.PurposeId;
 @NamedQuery(name = Activity.findBySalesRepAsReadView, query = "SELECT new co.icesi.pdaily.sales.activities.domain.model.view.ActivityReadView(a.id.id, b.id.id, b.name.name, s.id.id, s.name.name, p.id.id, p.name.name, a.creationDate.date, a.activityDate.date, a.comment.text) "
 		+ " FROM Activity a INNER JOIN Customer b ON a.buyerId = b.id LEFT JOIN Customer s ON a.supplierId = s.id INNER JOIN Purpose p ON a.purposeId = p.id"
 		+ " WHERE a.salesRepId = :salesRepId AND a.tenant = :company")
-public class Activity extends HarukTenantEntity<ActivityId> {
+public class Activity extends PdailyTenantEntity<ActivityId> {
 	private static final String PREFIX = "Activity.";
 	public static final String findBySalesRepAsReadView = PREFIX + "findBySalesRepAsReadView";
 

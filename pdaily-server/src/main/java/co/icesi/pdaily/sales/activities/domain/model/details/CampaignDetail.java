@@ -7,7 +7,7 @@ import java.util.Objects;
 import javax.persistence.*;
 
 import co.icesi.pdaily.common.model.Reference;
-import co.icesi.pdaily.common.model.tenancy.HarukTenantEntity;
+import co.icesi.pdaily.common.model.tenancy.PdailyTenantEntity;
 import co.icesi.pdaily.sales.activities.domain.model.Activity;
 import co.icesi.pdaily.sales.activities.domain.model.ActivityId;
 import co.icesi.pdaily.sales.activities.marketing.domain.model.MarketingCampaignId;
@@ -17,7 +17,7 @@ import co.icesi.pdaily.sales.activities.marketing.domain.model.MarketingCampaign
 @NamedQuery(name = CampaignDetail.findCampaignDetailsAsReadView, query = "SELECT new co.icesi.pdaily.sales.activities.domain.model.view.CampaignDetailReadView(c.id.id,c.name.name,a.detail.text)"
 		+ " FROM CampaignDetail a INNER JOIN MarketingCampaign c ON a.campaignId = c.id " +
 		" WHERE a.activity.id = :activity AND a.tenant = :company")
-public class CampaignDetail extends HarukTenantEntity<CampaignDetailId> {
+public class CampaignDetail extends PdailyTenantEntity<CampaignDetailId> {
 	private static final String PREFIX = "CampaignDetail.";
 	public static final String findCampaignDetailsAsReadView = PREFIX + "findCampaignDetailsAsReadView";
 

@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
-import co.icesi.pdaily.common.model.tenancy.HarukTenantEntity;
+import co.icesi.pdaily.common.model.tenancy.PdailyTenantEntity;
 
 /**
  * @author cristhiank on 14/11/19
@@ -16,7 +16,7 @@ import co.icesi.pdaily.common.model.tenancy.HarukTenantEntity;
 @Entity
 @Table(name = "test_tenant_entity")
 @NamedQuery(name = "TestTenantEntity.findByTenant", query = "SELECT t FROM TestTenantEntity t WHERE t.tenant = :company")
-public class TestTenantEntity extends HarukTenantEntity<UUID> {
+public class TestTenantEntity extends PdailyTenantEntity<UUID> {
 	@Id
 	@GeneratedValue
 	private UUID id;

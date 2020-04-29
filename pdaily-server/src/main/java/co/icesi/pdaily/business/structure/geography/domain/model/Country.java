@@ -9,7 +9,7 @@ import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 import co.haruk.core.domain.model.entity.PlainName;
-import co.icesi.pdaily.common.model.HarukEntity;
+import co.icesi.pdaily.common.model.PdailyEntity;
 import co.icesi.pdaily.common.model.Reference;
 
 /**
@@ -19,7 +19,7 @@ import co.icesi.pdaily.common.model.Reference;
 @Table(name = "bs_geo_countries")
 @NamedQuery(name = Country.findByCode, query = "SELECT c FROM Country c WHERE c.code = :code")
 @NamedQuery(name = Country.findByName, query = "SELECT c FROM Country c WHERE UPPER(c.name.name) = UPPER(:name)")
-public class Country extends HarukEntity<CountryId> {
+public class Country extends PdailyEntity<CountryId> {
 	private static final String PREFIX = "Country.";
 	public static final String findByCode = PREFIX + "findByCode";
 	public static final String findByName = PREFIX + "findByName";

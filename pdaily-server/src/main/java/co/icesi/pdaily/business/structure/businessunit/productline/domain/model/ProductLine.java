@@ -13,7 +13,7 @@ import javax.persistence.Table;
 import co.haruk.core.domain.model.entity.PlainName;
 import co.icesi.pdaily.business.structure.businessunit.domain.model.BusinessUnitId;
 import co.icesi.pdaily.common.model.Reference;
-import co.icesi.pdaily.common.model.tenancy.HarukTenantEntity;
+import co.icesi.pdaily.common.model.tenancy.PdailyTenantEntity;
 
 @Entity
 @Table(name = "bs_product_lines")
@@ -21,7 +21,7 @@ import co.icesi.pdaily.common.model.tenancy.HarukTenantEntity;
 @NamedQuery(name = ProductLine.findByName, query = "SELECT f FROM ProductLine f WHERE UPPER(f.name.name) = UPPER(:name) AND f.tenant = :company")
 @NamedQuery(name = ProductLine.findByBusinessUnit, query = "SELECT f FROM ProductLine f WHERE f.businessUnit = :businessUnit AND f.tenant = :company")
 @NamedQuery(name = ProductLine.countByBusinessUnit, query = "SELECT COUNT(f.id) FROM ProductLine f WHERE f.businessUnit = :businessUnit AND f.tenant = :company")
-public class ProductLine extends HarukTenantEntity<ProductLineId> {
+public class ProductLine extends PdailyTenantEntity<ProductLineId> {
 	private static final String PREFIX = "ProductLine.";
 	public static final String findByBusinessUnit = PREFIX + "findByBusinessUnit";
 	public static final String countByBusinessUnit = PREFIX + "countByBusinessUnit";

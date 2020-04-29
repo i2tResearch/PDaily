@@ -6,7 +6,7 @@ import java.util.Objects;
 
 import javax.persistence.*;
 
-import co.icesi.pdaily.common.model.HarukEntity;
+import co.icesi.pdaily.common.model.PdailyEntity;
 import co.icesi.pdaily.events.physical.body.domain.model.BodyPartId;
 import co.icesi.pdaily.events.physical.domain.model.PhysicalEvent;
 
@@ -15,7 +15,7 @@ import co.icesi.pdaily.events.physical.domain.model.PhysicalEvent;
 @NamedQuery(name = BodyPartDetail.findByEventAsReadView, query = "SELECT new co.icesi.pdaily.events.physical.domain.model.view.BodyPartDetailReadView(b.id.id, p.id.id, p.name.name) "
 		+
 		" FROM BodyPartDetail b INNER JOIN BodyPart p ON p.id = b.bodyPartId WHERE b.physicalEvent.id = :eventId")
-public class BodyPartDetail extends HarukEntity<BodyPartDetailId> {
+public class BodyPartDetail extends PdailyEntity<BodyPartDetailId> {
 	private static final String PREFIX = "BodyPartDetail.";
 	public static final String findByEventAsReadView = PREFIX + "findByEventAsReadView";
 

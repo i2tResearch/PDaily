@@ -11,7 +11,7 @@ import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 import co.haruk.core.domain.model.entity.PlainName;
-import co.icesi.pdaily.common.model.HarukEntity;
+import co.icesi.pdaily.common.model.PdailyEntity;
 import co.icesi.pdaily.common.model.Reference;
 
 /**
@@ -23,7 +23,7 @@ import co.icesi.pdaily.common.model.Reference;
 @NamedQuery(name = State.findByReference, query = "SELECT s FROM State s WHERE UPPER(s.reference.text) = UPPER(:reference) AND s.country = :country")
 @NamedQuery(name = State.countByCountry, query = "SELECT COUNT(s.id) FROM State s WHERE s.country = :country")
 @NamedQuery(name = State.findByCountry, query = "SELECT s FROM State s WHERE s.country = :country ORDER BY name.name")
-public class State extends HarukEntity<StateId> {
+public class State extends PdailyEntity<StateId> {
 	private static final String PREFIX = "State.";
 	public static final String findByName = PREFIX + "findByName";
 	public static final String findByReference = PREFIX + "findByReference";

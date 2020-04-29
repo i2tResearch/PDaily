@@ -10,7 +10,7 @@ import javax.persistence.MappedSuperclass;
  * @author cristhiank on 14/11/19
  **/
 @MappedSuperclass
-public abstract class HarukEntity<T> {
+public abstract class PdailyEntity<T> {
 
 	public abstract T id();
 
@@ -39,13 +39,13 @@ public abstract class HarukEntity<T> {
 
 	@Override
 	public boolean equals(Object obj) {
-		if ( !(obj instanceof HarukEntity) ) {
+		if ( !(obj instanceof PdailyEntity) ) {
 			return false;
 		}
-		return equalsInternal( (HarukEntity) obj, super::equals );
+		return equalsInternal( (PdailyEntity) obj, super::equals );
 	}
 
-	protected final <X extends HarukEntity> boolean equalsInternal(X other, Predicate<X> equalsFunction) {
+	protected final <X extends PdailyEntity> boolean equalsInternal(X other, Predicate<X> equalsFunction) {
 		if ( other == null ) {
 			return false;
 		}

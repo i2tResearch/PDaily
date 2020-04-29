@@ -6,12 +6,12 @@ import javax.persistence.*;
 
 import co.icesi.pdaily.business.structure.patient.domain.model.PatientId;
 import co.icesi.pdaily.common.model.UTCDateTime;
-import co.icesi.pdaily.common.model.tenancy.HarukTenantEntity;
+import co.icesi.pdaily.common.model.tenancy.PdailyTenantEntity;
 
 @Entity
 @Table(name = "event_food_events")
 @NamedQuery(name = FoodEvent.findByPatient, query = "SELECT f FROM FoodEvent f WHERE f.tenant = :company AND f.patientId = :patientId")
-public class FoodEvent extends HarukTenantEntity<FoodEventId> {
+public class FoodEvent extends PdailyTenantEntity<FoodEventId> {
 	private static final String PREFIX = "FoodEvent.";
 	public static final String findByPatient = PREFIX + "findByPatientAsReadView";
 

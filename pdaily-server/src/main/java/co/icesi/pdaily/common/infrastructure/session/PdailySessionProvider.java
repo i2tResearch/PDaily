@@ -8,10 +8,10 @@ import co.haruk.core.domain.model.session.SessionProvider;
 /**
  * @author cristhiank on 16/11/19
  **/
-public class HarukSessionProvider implements SessionProvider {
+public class PdailySessionProvider implements SessionProvider {
 	@Override
 	public ITenantId getCompanyId() {
-		return HarukSession.currentTenant();
+		return PdailySession.currentTenant();
 	}
 
 	@Override

@@ -7,7 +7,7 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
 import co.haruk.core.domain.model.entity.Identity;
-import co.icesi.pdaily.common.infrastructure.session.HarukSession;
+import co.icesi.pdaily.common.infrastructure.session.PdailySession;
 import co.icesi.pdaily.common.model.tenancy.TenantId;
 
 /**
@@ -29,9 +29,9 @@ public class TenantTestThread extends Thread {
 
 	@Override
 	public void run() {
-		HarukSession.setCurrentTenant( thisTenant );
+		PdailySession.setCurrentTenant( thisTenant );
 		// Pause X milliseconds to simulate some "real operation"
-		list.add( this.thisTenant.equals( HarukSession.currentTenant() ) );
+		list.add( this.thisTenant.equals( PdailySession.currentTenant() ) );
 		await().pollInSameThread().pollDelay( 200, TimeUnit.MILLISECONDS ).until( () -> true );
 		System.out.println( getName() + " executing with tenant id " + thisTenant );
 		latch.countDown();

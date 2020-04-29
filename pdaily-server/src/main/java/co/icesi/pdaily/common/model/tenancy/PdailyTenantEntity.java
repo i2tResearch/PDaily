@@ -10,14 +10,14 @@ import javax.persistence.MappedSuperclass;
 
 import co.haruk.core.domain.model.guards.Guards;
 import co.icesi.pdaily.common.infrastructure.jpa.TenantEntityListener;
-import co.icesi.pdaily.common.model.HarukEntity;
+import co.icesi.pdaily.common.model.PdailyEntity;
 
 /**
  * @author cristhiank on 14/11/19
  **/
 @MappedSuperclass
 @EntityListeners(TenantEntityListener.class)
-public abstract class HarukTenantEntity<T> extends HarukEntity<T> implements ITenantEntity {
+public abstract class PdailyTenantEntity<T> extends PdailyEntity<T> implements ITenantEntity {
 	@Embedded
 	@AttributeOverride(name = "id", column = @Column(name = "tenant_id", updatable = false, nullable = false))
 	public TenantId tenant;

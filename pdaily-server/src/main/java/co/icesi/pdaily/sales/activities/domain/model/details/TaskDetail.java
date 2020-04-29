@@ -7,7 +7,7 @@ import java.util.Objects;
 import javax.persistence.*;
 
 import co.icesi.pdaily.common.model.Reference;
-import co.icesi.pdaily.common.model.tenancy.HarukTenantEntity;
+import co.icesi.pdaily.common.model.tenancy.PdailyTenantEntity;
 import co.icesi.pdaily.sales.activities.domain.model.Activity;
 import co.icesi.pdaily.sales.activities.domain.model.ActivityId;
 import co.icesi.pdaily.sales.activities.task.domain.model.TaskId;
@@ -17,7 +17,7 @@ import co.icesi.pdaily.sales.activities.task.domain.model.TaskId;
 @NamedQuery(name = TaskDetail.findTaskDetailsAsReadView, query = "SELECT new co.icesi.pdaily.sales.activities.domain.model.view.TaskDetailReadView(t.id.id, t.name.name, a.detail.text)"
 		+ " FROM TaskDetail a INNER JOIN Task t ON a.taskId = t.id " +
 		" WHERE a.activity.id = :activity")
-public class TaskDetail extends HarukTenantEntity<TaskDetailId> {
+public class TaskDetail extends PdailyTenantEntity<TaskDetailId> {
 	private static final String PREFIX = "TaskDetail.";
 	public static final String findTaskDetailsAsReadView = PREFIX + "findTaskDetailsAsReadView";
 

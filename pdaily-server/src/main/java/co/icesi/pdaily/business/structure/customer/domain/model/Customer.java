@@ -28,7 +28,7 @@ import co.icesi.pdaily.common.model.ActiveInactiveState;
 import co.icesi.pdaily.common.model.EmailAddress;
 import co.icesi.pdaily.common.model.Reference;
 import co.icesi.pdaily.common.model.TaxID;
-import co.icesi.pdaily.common.model.tenancy.HarukTenantEntity;
+import co.icesi.pdaily.common.model.tenancy.PdailyTenantEntity;
 
 /**
  * @author cristhiank on 9/12/19
@@ -44,7 +44,7 @@ import co.icesi.pdaily.common.model.tenancy.HarukTenantEntity;
 		" LEFT JOIN HoldingCompany h ON c.holdingId = h.id" +
 		" WHERE c.tenant = :company AND c.id = :id")
 @NamedQuery(name = Customer.countForSubsidiary, query = "SELECT COUNT(c.id) FROM Customer c WHERE c.tenant = :company AND c.subsidiaryId = :subsidiary")
-public class Customer extends HarukTenantEntity<CustomerId> {
+public class Customer extends PdailyTenantEntity<CustomerId> {
 	private static final String PREFIX = "Customer.";
 	public static final String findForSubsidiaryAsReadView = PREFIX + "findForSubsidiaryAsReadView";
 	public static final String countForSubsidiary = PREFIX + "countForSubsidiary";

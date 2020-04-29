@@ -27,7 +27,7 @@ import co.icesi.pdaily.business.structure.address.domain.model.AddressId;
 import co.icesi.pdaily.business.structure.address.domain.model.AddressRequest;
 import co.icesi.pdaily.business.structure.address.domain.model.AddressService;
 import co.icesi.pdaily.business.structure.address.domain.model.view.AddressReadView;
-import co.icesi.pdaily.common.infrastructure.session.HarukSession;
+import co.icesi.pdaily.common.infrastructure.session.PdailySession;
 import co.icesi.pdaily.common.model.tenancy.TenantId;
 import co.icesi.pdaily.subscription.account.AccountTesting;
 import co.icesi.testing.DataSets;
@@ -49,7 +49,7 @@ class AddressServiceIT implements IDataSetDependent, ICDIContainerDependent {
 
 	@BeforeEach
 	void beforeEach() {
-		HarukSession.setCurrentTenant( TenantId.of( AccountTesting.ACCOUNT_ID ) );
+		PdailySession.setCurrentTenant( TenantId.of( AccountTesting.ACCOUNT_ID ) );
 	}
 
 	private void assertConsistency(AddressRequest expected, AddressReadView result) {

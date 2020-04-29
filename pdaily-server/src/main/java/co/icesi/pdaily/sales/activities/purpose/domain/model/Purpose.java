@@ -5,12 +5,12 @@ import static co.haruk.core.domain.model.guards.Guards.requireNonNull;
 import javax.persistence.*;
 
 import co.haruk.core.domain.model.entity.PlainName;
-import co.icesi.pdaily.common.model.tenancy.HarukTenantEntity;
+import co.icesi.pdaily.common.model.tenancy.PdailyTenantEntity;
 
 @Entity
 @Table(name = "sales_activities_purposes")
 @NamedQuery(name = Purpose.findByName, query = "SELECT t FROM Purpose t WHERE t.tenant = :company AND UPPER(t.name) = UPPER(:name)")
-public class Purpose extends HarukTenantEntity<PurposeId> {
+public class Purpose extends PdailyTenantEntity<PurposeId> {
 	private static final String PREFIX = "Purpose.";
 	public static final String findByName = PREFIX + "findByName";
 

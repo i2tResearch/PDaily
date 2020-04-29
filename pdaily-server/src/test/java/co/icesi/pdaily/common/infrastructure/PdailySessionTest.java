@@ -13,7 +13,7 @@ import org.junit.jupiter.api.Test;
  * @author cristhiank on 14/11/19
  **/
 @DisplayName("HARUK session tests")
-class HarukSessionTest {
+class PdailySessionTest {
 
 	@Test
 	@DisplayName("Starts multiple threads with different tenants")

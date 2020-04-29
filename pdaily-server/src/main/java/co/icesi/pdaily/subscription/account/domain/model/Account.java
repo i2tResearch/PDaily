@@ -11,7 +11,7 @@ import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 import co.haruk.core.domain.model.entity.PlainName;
-import co.icesi.pdaily.common.model.HarukEntity;
+import co.icesi.pdaily.common.model.PdailyEntity;
 import co.icesi.pdaily.common.model.TaxID;
 
 /**
@@ -21,7 +21,7 @@ import co.icesi.pdaily.common.model.TaxID;
 @Table(name = "subs_accounts")
 @NamedQuery(name = Account.findByTaxID, query = "SELECT c FROM Account c WHERE c.taxID = :taxID")
 @NamedQuery(name = Account.findByName, query = "SELECT c FROM Account c WHERE UPPER(c.name.name) = UPPER(:name)")
-public class Account extends HarukEntity<AccountId> {
+public class Account extends PdailyEntity<AccountId> {
 
 	private static final String PREFIX = "Account.";
 	public static final String findByTaxID = PREFIX + "findByTaxID";

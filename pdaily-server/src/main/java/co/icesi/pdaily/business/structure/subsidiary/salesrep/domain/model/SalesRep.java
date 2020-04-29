@@ -14,7 +14,7 @@ import javax.persistence.Transient;
 import co.haruk.core.domain.model.entity.PlainName;
 import co.icesi.pdaily.business.structure.subsidiary.domain.model.SubsidiaryId;
 import co.icesi.pdaily.common.model.Reference;
-import co.icesi.pdaily.common.model.tenancy.HarukTenantEntity;
+import co.icesi.pdaily.common.model.tenancy.PdailyTenantEntity;
 
 /**
  * @author cristhiank on 25/11/19
@@ -27,7 +27,7 @@ import co.icesi.pdaily.common.model.tenancy.HarukTenantEntity;
 @NamedQuery(name = SalesRep.findBySubsidiaryAsRepView, query = "SELECT new co.icesi.pdaily.business.structure.subsidiary.salesrep.domain.model.view.SalesRepReadView(r.id.id,CONCAT(p.givenName,' ',p.lastName),r.reference.text,r.subsidiaryId.id) FROM SalesRep r INNER JOIN User p ON r.id = p.id WHERE r.tenant = :company AND r.subsidiaryId = :subsidiary")
 @NamedQuery(name = SalesRep.findBySubsidiary, query = "SELECT r FROM SalesRep r WHERE r.tenant = :company AND r.subsidiaryId = :subsidiary")
 @NamedQuery(name = SalesRep.countBySubsidiary, query = "SELECT COUNT(r.id) FROM SalesRep r WHERE r.tenant = :company AND r.subsidiaryId = :subsidiary")
-public class SalesRep extends HarukTenantEntity<SalesRepId> {
+public class SalesRep extends PdailyTenantEntity<SalesRepId> {
 	private static final String PREFIX = "SalesRep.";
 	public static final String findAllAsRepView = PREFIX + "findAllAsRepView";
 	public static final String findByIdAsRepView = PREFIX + "findByIdAsRepView";
