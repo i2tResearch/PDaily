@@ -1,4 +1,4 @@
-package co.icesi.pdaily.clinical.base.levodopa.infrastructure.persistence;
+package co.icesi.pdaily.clinical.base.animic.infrastructure.persistence;
 
 import static co.haruk.core.domain.model.guards.Guards.requireNonNull;
 
@@ -9,15 +9,15 @@ import javax.enterprise.context.ApplicationScoped;
 import co.haruk.core.domain.model.entity.PlainName;
 import co.haruk.core.domain.model.persistence.QueryParameter;
 import co.haruk.core.infrastructure.persistence.jpa.JPARepository;
-import co.icesi.pdaily.clinical.base.levodopa.domain.model.LevodopaMedicine;
+import co.icesi.pdaily.clinical.base.animic.domain.model.AnimicType;
 
 @ApplicationScoped
-public class LevodopaMedicineRepository extends JPARepository<LevodopaMedicine> {
-	public Optional<LevodopaMedicine> findByName(PlainName label) {
+public class AnimicTypeRepository extends JPARepository<AnimicType> {
+	public Optional<AnimicType> findByLabel(PlainName label) {
 		requireNonNull( label );
 		return findSingleWithNamedQuery(
-				LevodopaMedicine.findByName,
-				QueryParameter.with( "name", label.text() ).parameters()
+				AnimicType.findByLabel,
+				QueryParameter.with( "label", label.text() ).parameters()
 		);
 	}
 }

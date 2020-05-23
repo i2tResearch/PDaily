@@ -1,13 +1,13 @@
 package co.icesi.pdaily.clinical.base.levodopa.domain.model;
 
+import static co.haruk.core.domain.model.guards.Guards.requireNonNull;
+
 import javax.persistence.*;
 
 import co.haruk.core.domain.model.entity.PlainName;
 import co.icesi.pdaily.clinical.base.levodopa.type.domain.model.LevodopaTypeId;
 import co.icesi.pdaily.common.model.MedicineDose;
 import co.icesi.pdaily.common.model.tenancy.PdailyTenantEntity;
-
-import static co.haruk.core.domain.model.guards.Guards.requireNonNull;
 
 @Entity
 @Table(name = "medicine_levodopa")
@@ -38,33 +38,43 @@ public class LevodopaMedicine extends PdailyTenantEntity<LevodopaMedicineId> {
 	}
 
 	public static LevodopaMedicine of(LevodopaMedicineId id, PlainName name,
-									  LevodopaTypeId typeId, MedicineDose dose) {
+			LevodopaTypeId typeId, MedicineDose dose) {
 		return new LevodopaMedicine( id, name, typeId, dose );
 	}
 
-	public PlainName name() { return name; }
+	public PlainName name() {
+		return name;
+	}
 
-	public LevodopaTypeId typeId() { return typeId; }
+	public LevodopaTypeId typeId() {
+		return typeId;
+	}
 
-	public MedicineDose dose() { return dose; }
+	public MedicineDose dose() {
+		return dose;
+	}
 
 	private void setName(PlainName name) {
-		this.name = requireNonNull( name, "El nombre del medicamento tipo levodopa es necesario.");
+		this.name = requireNonNull( name, "El nombre del medicamento tipo levodopa es necesario." );
 	}
 
 	private void setType(LevodopaTypeId typeId) {
-		this.typeId = requireNonNull( typeId, "El tipo del medicamento es necesario.");
+		this.typeId = requireNonNull( typeId, "El tipo del medicamento es necesario." );
 	}
 
 	private void setDose(MedicineDose dose) {
-		this.dose = requireNonNull( dose, "La dosis que corresponde al medicamento es necesaria.");
+		this.dose = requireNonNull( dose, "La dosis que corresponde al medicamento es necesaria." );
 	}
 
 	@Override
-	public LevodopaMedicineId id() { return id;	}
+	public LevodopaMedicineId id() {
+		return id;
+	}
 
 	@Override
-	public void setId(LevodopaMedicineId id) { this.id = id; }
+	public void setId(LevodopaMedicineId id) {
+		this.id = id;
+	}
 
 	public void updateFrom(LevodopaMedicine updated) {
 		setDose( updated.dose );

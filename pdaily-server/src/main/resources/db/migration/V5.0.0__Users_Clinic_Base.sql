@@ -14,3 +14,10 @@ CREATE TABLE IF NOT EXISTS medicine_levodopa
     dose_value INT          NOT NULL,
     PRIMARY KEY (tenant_id, id)
 ) WITH "template=partitioned, affinity_key=tenant_id, atomicity=TRANSACTIONAL_SNAPSHOT";
+
+CREATE TABLE IF NOT EXISTS cb_animic_types
+(
+    id          UUID         NOT NULL,
+    label       VARCHAR(100) NOT NULL,
+    PRIMARY KEY (id)
+) WITH "template=partitioned, atomicity=TRANSACTIONAL_SNAPSHOT";
