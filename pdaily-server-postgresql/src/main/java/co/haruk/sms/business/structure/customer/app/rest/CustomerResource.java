@@ -19,7 +19,7 @@ import co.haruk.sms.business.structure.customer.domain.model.view.CustomerBusine
 import co.haruk.sms.business.structure.customer.domain.model.view.CustomerReadView;
 
 /**
- * @author cristhiank on 9/12/19
+ * @author andres2508 on 9/12/19
  **/
 @Path("/business/customer")
 @Consumes(MediaType.APPLICATION_JSON)

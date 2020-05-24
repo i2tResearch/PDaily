@@ -15,7 +15,7 @@ import co.haruk.sms.business.structure.subsidiary.domain.model.SubsidiaryId;
 import co.haruk.sms.common.model.tenancy.PdailyTenantEntity;
 
 /**
- * @author cristhiank on 1/12/19
+ * @author andres2508 on 1/12/19
  **/
 @Entity
 @Table(name = "bs_customer_holding_companies")

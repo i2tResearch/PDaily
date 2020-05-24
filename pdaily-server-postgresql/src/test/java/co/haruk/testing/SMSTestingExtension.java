@@ -12,7 +12,7 @@ import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 
 /**
- * @author cristhiank on 14/11/19
+ * @author andres2508 on 14/11/19
  **/
 public class SMSTestingExtension implements BeforeAllCallback, BeforeEachCallback {
 	@Override
@@ -29,7 +29,7 @@ public class SMSTestingExtension implements BeforeAllCallback, BeforeEachCallbac
 		RestAssured.requestSpecification = new RequestSpecBuilder()
 				.setContentType( MediaType.APPLICATION_JSON )
 				.setAccept( MediaType.APPLICATION_JSON )
-				.addHeader( "haruk-tenant", AccountTesting.ACCOUNT_ID )
+				.addHeader( "pdaily-tenant", AccountTesting.ACCOUNT_ID )
 				.build();
 	}
 }

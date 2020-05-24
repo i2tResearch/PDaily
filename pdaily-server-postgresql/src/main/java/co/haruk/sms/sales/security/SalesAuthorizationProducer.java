@@ -11,7 +11,7 @@ import co.haruk.sms.security.authorization.domain.model.AuthorizationGroupBuilde
 import co.haruk.sms.security.authorization.domain.model.IAuthorizationProducer;
 
 /**
- * @author cristhiank on 1/5/20
+ * @author andres2508 on 1/5/20
  **/
 @Dependent
 public class SalesAuthorizationProducer implements IAuthorizationProducer {

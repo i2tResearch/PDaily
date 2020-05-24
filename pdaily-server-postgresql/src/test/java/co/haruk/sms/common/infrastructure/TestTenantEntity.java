@@ -11,7 +11,7 @@ import javax.persistence.Table;
 import co.haruk.sms.common.model.tenancy.PdailyTenantEntity;
 
 /**
- * @author cristhiank on 14/11/19
+ * @author andres2508 on 14/11/19
  **/
 @Entity
 @Table(name = "test_tenant_entity")

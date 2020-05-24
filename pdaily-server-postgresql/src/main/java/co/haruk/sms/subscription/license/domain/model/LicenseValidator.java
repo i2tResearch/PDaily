@@ -9,7 +9,7 @@ import co.haruk.core.domain.model.persistence.DuplicatedRecordException;
 import co.haruk.sms.subscription.license.infrastructure.persistence.LicenseRepository;
 
 /**
- * @author cristhiank on 15/11/19
+ * @author andres2508 on 15/11/19
  **/
 @Dependent
 public class LicenseValidator {

@@ -23,7 +23,7 @@ import co.haruk.sms.common.infrastructure.jpa.SMSJPARepository;
 import co.haruk.sms.common.infrastructure.session.HarukSession;
 
 /**
- * @author cristhiank on 9/12/19
+ * @author andres2508 on 9/12/19
  **/
 @ApplicationScoped
 public class CustomerRepository extends SMSJPARepository<Customer> {

@@ -6,7 +6,7 @@ import javax.persistence.*;
 
 import co.haruk.core.domain.model.entity.PlainName;
 import co.haruk.sms.clinical.base.levodopa.type.domain.model.LevodopaTypeId;
-import co.haruk.sms.common.model.MedicineDose;
+import co.haruk.sms.common.model.MedicineConcentration;
 import co.haruk.sms.common.model.tenancy.PdailyTenantEntity;
 
 @Entity
@@ -25,12 +25,12 @@ public class LevodopaMedicine extends PdailyTenantEntity<LevodopaMedicineId> {
 	private LevodopaTypeId typeId;
 	@Embedded
 	@AttributeOverride(name = "value", column = @Column(name = "dose_value"))
-	private MedicineDose dose;
+	private MedicineConcentration dose;
 
 	protected LevodopaMedicine() {
 	}
 
-	private LevodopaMedicine(LevodopaMedicineId id, PlainName name, LevodopaTypeId typeId, MedicineDose dose) {
+	private LevodopaMedicine(LevodopaMedicineId id, PlainName name, LevodopaTypeId typeId, MedicineConcentration dose) {
 		setId( id );
 		setName( name );
 		setType( typeId );
@@ -38,7 +38,7 @@ public class LevodopaMedicine extends PdailyTenantEntity<LevodopaMedicineId> {
 	}
 
 	public static LevodopaMedicine of(LevodopaMedicineId id, PlainName name,
-			LevodopaTypeId typeId, MedicineDose dose) {
+			LevodopaTypeId typeId, MedicineConcentration dose) {
 		return new LevodopaMedicine( id, name, typeId, dose );
 	}
 
@@ -50,7 +50,7 @@ public class LevodopaMedicine extends PdailyTenantEntity<LevodopaMedicineId> {
 		return typeId;
 	}
 
-	public MedicineDose dose() {
+	public MedicineConcentration dose() {
 		return dose;
 	}
 
@@ -62,8 +62,8 @@ public class LevodopaMedicine extends PdailyTenantEntity<LevodopaMedicineId> {
 		this.typeId = requireNonNull( typeId, "El tipo del medicamento es necesario." );
 	}
 
-	private void setDose(MedicineDose dose) {
-		this.dose = requireNonNull( dose, "La dosis que corresponde al medicamento es necesaria." );
+	private void setDose(MedicineConcentration dose) {
+		this.dose = requireNonNull( dose, "La concentracion en mg que corresponde al medicamento es necesaria." );
 	}
 
 	@Override

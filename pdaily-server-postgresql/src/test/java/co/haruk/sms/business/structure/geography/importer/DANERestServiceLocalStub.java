@@ -13,7 +13,7 @@ import co.haruk.sms.business.structure.geography.infrastructure.importer.DaneCit
 import co.haruk.sms.business.structure.geography.infrastructure.importer.DaneStateDTO;
 
 /**
- * @author cristhiank on 3/12/19
+ * @author andres2508 on 3/12/19
  **/
 @RestClient
 @ApplicationScoped

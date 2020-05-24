@@ -14,7 +14,7 @@ import co.haruk.sms.business.structure.subsidiary.salesoffice.domain.model.Sales
 import co.haruk.sms.business.structure.subsidiary.salesoffice.infrastructure.persistence.SalesOfficeRepository;
 
 /**
- * @author cristhiank on 21/11/19
+ * @author andres2508 on 21/11/19
  **/
 @ApplicationScoped
 public class SalesOfficeAppService {

@@ -4,7 +4,7 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 
 /**
- * @author cristhiank on 21/11/19
+ * @author andres2508 on 21/11/19
  **/
 @Path("/health")
 public class HealthCheckResource {

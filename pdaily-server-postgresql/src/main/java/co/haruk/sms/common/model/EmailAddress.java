@@ -12,7 +12,7 @@ import javax.persistence.Column;
 import javax.persistence.Embeddable;
 
 /**
- * @author cristhiank on 15/11/19
+ * @author andres2508 on 15/11/19
  **/
 @Embeddable
 public class EmailAddress implements Serializable {

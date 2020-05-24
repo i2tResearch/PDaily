@@ -10,7 +10,7 @@ import co.haruk.sms.security.user.domain.model.Password;
 import co.haruk.sms.security.user.infrastructure.security.Pbkdf2CryptoProvider;
 
 /**
- * @author cristhiank on 10/5/20
+ * @author andres2508 on 10/5/20
  **/
 @DisplayName("Crypto provider test")
 class Pbkdf2CryptoProviderTest {

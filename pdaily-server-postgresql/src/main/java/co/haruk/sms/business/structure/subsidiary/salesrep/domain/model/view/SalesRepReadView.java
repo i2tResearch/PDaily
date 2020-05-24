@@ -11,7 +11,7 @@ import co.haruk.sms.business.structure.subsidiary.salesrep.domain.model.SalesRep
 import co.haruk.sms.common.model.Reference;
 
 /**
- * @author cristhiank on 25/11/19
+ * @author andres2508 on 25/11/19
  **/
 public final class SalesRepReadView {
 	public final String id;

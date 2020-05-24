@@ -9,7 +9,7 @@ import co.haruk.core.domain.model.persistence.DuplicatedRecordException;
 import co.haruk.sms.business.structure.customer.holding.infrastructure.persistence.HoldingCompanyRepository;
 
 /**
- * @author cristhiank on 1/12/19
+ * @author andres2508 on 1/12/19
  **/
 @Dependent
 public class HoldingCompanyValidator {

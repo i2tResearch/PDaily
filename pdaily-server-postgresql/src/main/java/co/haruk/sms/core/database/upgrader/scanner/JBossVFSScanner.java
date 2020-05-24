@@ -12,7 +12,7 @@ import org.jboss.vfs.VirtualFile;
 /**
  * Scanner para leer archivos dentro de wildfly.
  *
- * @author cristhiank on 30/10/19
+ * @author andres2508 on 30/10/19
  **/
 public final class JBossVFSScanner implements ClasspathScanner {
 	private final String path;

@@ -23,7 +23,7 @@ import co.haruk.sms.business.structure.subsidiary.salesrep.domain.model.view.Sal
 import co.haruk.sms.common.model.Reference;
 
 /**
- * @author cristhiank on 25/11/19
+ * @author andres2508 on 25/11/19
  **/
 @ApplicationScoped
 public class SalesRepRepository extends JPARepository<SalesRep> {

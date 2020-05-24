@@ -8,7 +8,7 @@ import co.haruk.core.domain.model.persistence.IDataSourceProvider;
 import io.agroal.api.AgroalDataSource;
 
 /**
- * @author cristhiank on 20/11/19
+ * @author andres2508 on 20/11/19
  **/
 public class QuarkusDataSourceProvider implements IDataSourceProvider {
 

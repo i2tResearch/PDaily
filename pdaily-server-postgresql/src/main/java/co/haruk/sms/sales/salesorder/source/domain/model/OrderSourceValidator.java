@@ -9,7 +9,7 @@ import co.haruk.core.domain.model.persistence.DuplicatedRecordException;
 import co.haruk.sms.sales.salesorder.source.infrastructure.persistence.OrderSourceRepository;
 
 /**
- * @author cristhiank on 23/12/19
+ * @author andres2508 on 23/12/19
  **/
 @Dependent
 public class OrderSourceValidator {

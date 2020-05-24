@@ -11,7 +11,7 @@ import co.haruk.sms.common.model.TaxID;
 import co.haruk.sms.subscription.account.domain.model.Account;
 
 /**
- * @author cristhiank on 30/10/19
+ * @author andres2508 on 30/10/19
  **/
 @ApplicationScoped
 public class AccountRepository extends JPARepository<Account> {

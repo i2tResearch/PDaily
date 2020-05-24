@@ -5,7 +5,7 @@ import java.util.Objects;
 import javax.json.JsonValue;
 
 /**
- * @author cristhiank on 20/5/20
+ * @author andres2508 on 20/5/20
  **/
 public final class ReportColumn implements Comparable<ReportColumn> {
 	private final String label;

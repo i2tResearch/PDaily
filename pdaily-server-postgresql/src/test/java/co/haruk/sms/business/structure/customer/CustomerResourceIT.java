@@ -25,7 +25,7 @@ import co.haruk.testing.SMSTest;
 import co.haruk.testing.SMSTesting;
 
 /**
- * @author cristhiank on 9/12/19
+ * @author andres2508 on 9/12/19
  **/
 @SMSTest
 @DisplayName("Customer tests")

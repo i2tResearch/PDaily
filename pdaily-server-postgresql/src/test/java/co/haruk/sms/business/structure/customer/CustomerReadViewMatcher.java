@@ -15,7 +15,7 @@ import co.haruk.sms.business.structure.customer.app.CustomerRequestDTO;
 import co.haruk.sms.business.structure.customer.domain.model.view.CustomerReadView;
 
 /**
- * @author cristhiank on 10/12/19
+ * @author andres2508 on 10/12/19
  **/
 public class CustomerReadViewMatcher extends BaseMatcher<String> {
 

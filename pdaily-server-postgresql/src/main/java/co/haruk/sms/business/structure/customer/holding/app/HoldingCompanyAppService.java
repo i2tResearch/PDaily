@@ -14,7 +14,7 @@ import co.haruk.sms.business.structure.customer.holding.infrastructure.persisten
 import co.haruk.sms.business.structure.subsidiary.domain.model.SubsidiaryId;
 
 /**
- * @author cristhiank on 1/12/19
+ * @author andres2508 on 1/12/19
  **/
 @ApplicationScoped
 public class HoldingCompanyAppService {

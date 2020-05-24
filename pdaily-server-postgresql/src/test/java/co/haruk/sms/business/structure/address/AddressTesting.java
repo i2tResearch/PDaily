@@ -9,7 +9,7 @@ import co.haruk.sms.business.structure.address.domain.model.AddressRequest;
 import co.haruk.sms.business.structure.geography.GeographyTesting;
 
 /**
- * @author cristhiank on 7/12/19
+ * @author andres2508 on 7/12/19
  **/
 public final class AddressTesting {
 	public static final String ADDRESS_ID = "90E21347-E4B6-4AB1-A004-DB99B9DCD949";

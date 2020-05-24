@@ -6,7 +6,7 @@ import co.haruk.sms.business.structure.subsidiary.domain.model.SubsidiaryId;
 import co.haruk.sms.common.model.Reference;
 
 /**
- * @author cristhiank on 19/11/19
+ * @author andres2508 on 19/11/19
  **/
 public final class SubsidiaryDTO {
 	public String id;

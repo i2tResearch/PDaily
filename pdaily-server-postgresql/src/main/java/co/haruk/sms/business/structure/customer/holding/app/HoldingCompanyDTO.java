@@ -6,7 +6,7 @@ import co.haruk.sms.business.structure.customer.holding.domain.model.HoldingComp
 import co.haruk.sms.business.structure.subsidiary.domain.model.SubsidiaryId;
 
 /**
- * @author cristhiank on 1/12/19
+ * @author andres2508 on 1/12/19
  **/
 public final class HoldingCompanyDTO {
 	public String id;

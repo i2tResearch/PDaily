@@ -15,7 +15,7 @@ import co.haruk.sms.subscription.account.domain.model.AccountValidator;
 import co.haruk.sms.subscription.account.infrastructure.persistence.AccountRepository;
 
 /**
- * @author cristhiank on 30/10/19
+ * @author andres2508 on 30/10/19
  **/
 @ApplicationScoped
 public class AccountAppService {

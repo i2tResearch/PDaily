@@ -8,7 +8,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 /**
- * @author cristhiank on 16/11/19
+ * @author andres2508 on 16/11/19
  **/
 @DisplayName("Email validation tests")
 class EmailAddressTest {

@@ -16,7 +16,7 @@ import co.haruk.sms.security.user.app.UserAppService;
 import co.haruk.sms.security.user.app.UserDTO;
 
 /**
- * @author cristhiank on 16/11/19
+ * @author andres2508 on 16/11/19
  **/
 @Path("/subscription/user")
 @Consumes(MediaType.APPLICATION_JSON)

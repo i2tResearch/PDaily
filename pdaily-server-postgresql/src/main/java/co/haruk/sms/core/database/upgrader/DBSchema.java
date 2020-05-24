@@ -11,7 +11,7 @@ import java.sql.Statement;
 import javax.sql.DataSource;
 
 /**
- * @author cristhiank on 31/10/19
+ * @author andres2508 on 31/10/19
  **/
 public final class DBSchema {
 	private static final String historySchemeSQL = "CREATE TABLE IF NOT EXISTS haruk_schema_history(version LONG PRIMARY KEY,filename VARCHAR(255))";

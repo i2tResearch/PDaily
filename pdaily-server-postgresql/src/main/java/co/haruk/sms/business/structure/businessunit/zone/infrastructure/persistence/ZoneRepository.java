@@ -15,7 +15,7 @@ import co.haruk.sms.business.structure.businessunit.zone.domain.model.Zone;
 import co.haruk.sms.common.model.Reference;
 
 /**
- * @author cristhiank on 24/11/19
+ * @author andres2508 on 24/11/19
  **/
 @ApplicationScoped
 public class ZoneRepository extends JPARepository<Zone> {

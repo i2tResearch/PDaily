@@ -28,7 +28,7 @@ import co.haruk.sms.business.structure.subsidiary.salesrep.domain.model.SalesRep
 import co.haruk.sms.common.infrastructure.session.HarukSession;
 
 /**
- * @author cristhiank on 9/12/19
+ * @author andres2508 on 9/12/19
  **/
 @ApplicationScoped
 public class CustomerAppService {

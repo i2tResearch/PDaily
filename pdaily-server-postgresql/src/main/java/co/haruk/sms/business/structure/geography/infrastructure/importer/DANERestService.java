@@ -12,7 +12,7 @@ import javax.ws.rs.core.MediaType;
 import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
 
 /**
- * @author cristhiank on 2/12/19
+ * @author andres2508 on 2/12/19
  **/
 @Path("")
 @Singleton

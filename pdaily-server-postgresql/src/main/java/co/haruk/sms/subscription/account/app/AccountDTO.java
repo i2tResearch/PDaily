@@ -6,7 +6,7 @@ import co.haruk.sms.subscription.account.domain.model.Account;
 import co.haruk.sms.subscription.account.domain.model.AccountId;
 
 /**
- * @author cristhiank on 30/10/19
+ * @author andres2508 on 30/10/19
  **/
 public final class AccountDTO {
 	public String id;

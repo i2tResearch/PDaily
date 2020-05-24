@@ -1,7 +1,7 @@
 package co.haruk.sms.business.structure.customer.app;
 
 /**
- * @author cristhiank on 26/12/19
+ * @author andres2508 on 26/12/19
  **/
 public final class CustomerBusinessViewRequest {
 	public String businessId;

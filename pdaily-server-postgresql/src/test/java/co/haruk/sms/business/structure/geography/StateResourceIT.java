@@ -21,7 +21,7 @@ import co.haruk.testing.DataSets;
 import co.haruk.testing.SMSTest;
 
 /**
- * @author cristhiank on 5/12/19
+ * @author andres2508 on 5/12/19
  **/
 @SMSTest
 @DisplayName("State tests")

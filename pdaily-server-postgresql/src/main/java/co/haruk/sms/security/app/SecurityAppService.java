@@ -8,7 +8,7 @@ import co.haruk.sms.security.user.app.UserAppService;
 import co.haruk.sms.startup.SMSStartedEvent;
 
 /**
- * @author cristhiank on 25/2/20
+ * @author andres2508 on 25/2/20
  **/
 public class SecurityAppService {
 	@Inject

@@ -3,7 +3,7 @@ package co.haruk.sms.subscription.account;
 import co.haruk.sms.common.model.tenancy.TenantId;
 
 /**
- * @author cristhiank on 14/11/19
+ * @author andres2508 on 14/11/19
  **/
 public final class AccountTesting {
 	public static final String ACCOUNT_ID = "F8523E75-9070-4A60-991A-BF22A46F0866";

@@ -6,7 +6,7 @@ import co.haruk.core.domain.model.events.EventBus;
 import co.haruk.core.domain.model.persistence.upgrader.IDataSourceUpgrader;
 
 /**
- * @author cristhiank on 20/11/19
+ * @author andres2508 on 20/11/19
  **/
 public class SMSStartup {
 	public static boolean STARTED = false;

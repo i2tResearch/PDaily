@@ -6,7 +6,7 @@ import co.haruk.sms.business.structure.customer.domain.model.Customer;
 import co.haruk.sms.common.infrastructure.session.HarukSession;
 
 /**
- * @author cristhiank on 9/5/20
+ * @author andres2508 on 9/5/20
  **/
 class CustomerQueryManager {
 	final static String queryForAllAsReadView = "SELECT new co.haruk.sms.business.structure.customer.domain.model.view.CustomerReadView(c.id.id,c.taxID.text,c.mainEmailAddress.email,c.name.name,h.id.id,h.name.name,s.id.id,s.name.name,c.reference.text,c.state, c.type)"

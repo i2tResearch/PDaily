@@ -1,7 +1,7 @@
 package co.haruk.sms.subscription.license;
 
 /**
- * @author cristhiank on 14/11/19
+ * @author andres2508 on 14/11/19
  **/
 public final class LicenseTesting {
 	public static final String LICENSE_ID = "5D409DAD-5C34-4C04-BB00-51B33C879B43";

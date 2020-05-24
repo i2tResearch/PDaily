@@ -16,7 +16,7 @@ import co.haruk.sms.subscription.license.app.LicenseAppService;
 import co.haruk.sms.subscription.license.app.LicenseDTO;
 
 /**
- * @author cristhiank on 15/11/19
+ * @author andres2508 on 15/11/19
  **/
 @Path("/subscription/license")
 @Produces(MediaType.APPLICATION_JSON)

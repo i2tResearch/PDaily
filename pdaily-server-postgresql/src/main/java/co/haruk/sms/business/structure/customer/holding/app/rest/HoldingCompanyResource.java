@@ -16,7 +16,7 @@ import co.haruk.sms.business.structure.customer.holding.app.HoldingCompanyAppSer
 import co.haruk.sms.business.structure.customer.holding.app.HoldingCompanyDTO;
 
 /**
- * @author cristhiank on 1/12/19
+ * @author andres2508 on 1/12/19
  **/
 @Path("/business/customer/holding")
 @Produces(MediaType.APPLICATION_JSON)

@@ -20,7 +20,7 @@ import co.haruk.sms.security.user.app.UserAppService;
 import co.haruk.sms.subscription.account.app.AccountAppService;
 
 /**
- * @author cristhiank on 9/2/20
+ * @author andres2508 on 9/2/20
  **/
 @Path("/")
 @Produces(MediaType.APPLICATION_JSON)

@@ -19,7 +19,7 @@ import co.haruk.sms.business.structure.subsidiary.salesrep.domain.model.SalesRep
 import co.haruk.sms.common.model.tenancy.PdailyTenantEntity;
 
 /**
- * @author cristhiank on 9/12/19
+ * @author andres2508 on 9/12/19
  **/
 @Entity
 @Table(name = "bs_customers_business_view")

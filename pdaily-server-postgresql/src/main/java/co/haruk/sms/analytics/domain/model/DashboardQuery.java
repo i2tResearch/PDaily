@@ -10,7 +10,7 @@ import co.haruk.core.domain.model.query.QueryEngine;
 import co.haruk.core.domain.model.query.StdMappers;
 
 /**
- * @author cristhiank on 23/5/20
+ * @author andres2508 on 23/5/20
  **/
 public final class DashboardQuery {
 	final String name;

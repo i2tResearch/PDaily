@@ -1,7 +1,7 @@
 package co.haruk.sms.business.structure.geography.infrastructure.importer;
 
 /**
- * @author cristhiank on 2/12/19
+ * @author andres2508 on 2/12/19
  **/
 public final class DaneCityDTO {
 	public String municipio;

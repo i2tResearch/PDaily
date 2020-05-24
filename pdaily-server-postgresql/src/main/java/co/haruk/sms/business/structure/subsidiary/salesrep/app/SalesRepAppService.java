@@ -20,7 +20,7 @@ import co.haruk.sms.common.model.Reference;
 import co.haruk.sms.security.user.domain.model.UserId;
 
 /**
- * @author cristhiank on 25/11/19
+ * @author andres2508 on 25/11/19
  **/
 @ApplicationScoped
 public class SalesRepAppService {

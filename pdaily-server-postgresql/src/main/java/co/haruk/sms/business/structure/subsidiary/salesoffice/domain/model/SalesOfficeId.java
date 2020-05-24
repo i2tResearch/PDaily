@@ -7,7 +7,7 @@ import javax.persistence.Embeddable;
 import co.haruk.core.domain.model.entity.Identity;
 
 /**
- * @author cristhiank on 21/11/19
+ * @author andres2508 on 21/11/19
  **/
 @Embeddable
 public class SalesOfficeId extends Identity {

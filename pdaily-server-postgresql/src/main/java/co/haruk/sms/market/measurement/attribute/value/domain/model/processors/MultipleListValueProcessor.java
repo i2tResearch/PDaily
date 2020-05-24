@@ -12,7 +12,7 @@ import javax.json.JsonException;
 import co.haruk.sms.market.measurement.attribute.value.domain.model.AttributeContent;
 
 /**
- * @author cristhiank on 9/5/20
+ * @author andres2508 on 9/5/20
  **/
 public class MultipleListValueProcessor {
 	private List<String> content;

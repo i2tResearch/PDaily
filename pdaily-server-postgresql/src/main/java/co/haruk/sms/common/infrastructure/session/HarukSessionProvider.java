@@ -6,7 +6,7 @@ import co.haruk.core.domain.model.session.ITenantId;
 import co.haruk.core.domain.model.session.SessionProvider;
 
 /**
- * @author cristhiank on 16/11/19
+ * @author andres2508 on 16/11/19
  **/
 public class HarukSessionProvider implements SessionProvider {
 	@Override

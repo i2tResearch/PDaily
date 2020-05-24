@@ -21,7 +21,7 @@ import java.util.LinkedList;
 import co.haruk.core.testing.data.IDataSet;
 
 /**
- * @author cristhiank on 11/10/19
+ * @author andres2508 on 11/10/19
  **/
 public enum DataSets implements IDataSet {
 	ACCOUNT( "datasets/account.sql" ),
@@ -65,7 +65,9 @@ public enum DataSets implements IDataSet {
 	LEVODOPA_TYPE( "datasets/clinical.base/levodopa_type.sql" ),
 	LEVODOPA_MEDICINE( "datasets/clinical.base/medicine_levodopa.sql", LEVODOPA_TYPE ),
 	ANIMIC_TYPE( "datasets/clinical.base/animic_type.sql" ),
-	ANIMIC_EVENT( "datasets/events/animic_event.sql", ANIMIC_TYPE );
+	ANIMIC_EVENT( "datasets/events/animic_event.sql", ANIMIC_TYPE ),
+	FOOD_SCHEDULE( "datasets/schedules/programming_food_schedule.sql" ),
+	LEVODOPA_SCHEDULE( "datasets/schedules/levodopa_schedules.sql", LEVODOPA_MEDICINE );
 
 	private final String fileName;
 	private final IDataSet[] deps;

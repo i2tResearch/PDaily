@@ -6,7 +6,7 @@ import co.haruk.sms.common.infrastructure.session.HarukSession;
 import co.haruk.sms.common.model.tenancy.ITenantEntity;
 
 /**
- * @author cristhiank on 14/11/19
+ * @author andres2508 on 14/11/19
  **/
 public class TenantEntityListener {
 

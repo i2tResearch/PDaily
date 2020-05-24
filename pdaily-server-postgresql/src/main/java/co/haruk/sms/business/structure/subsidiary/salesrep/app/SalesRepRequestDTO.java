@@ -1,7 +1,7 @@
 package co.haruk.sms.business.structure.subsidiary.salesrep.app;
 
 /**
- * @author cristhiank on 25/11/19
+ * @author andres2508 on 25/11/19
  **/
 public final class SalesRepRequestDTO {
 	public String reference;

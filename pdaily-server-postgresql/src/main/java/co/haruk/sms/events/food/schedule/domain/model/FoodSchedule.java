@@ -5,6 +5,7 @@ import static co.haruk.core.domain.model.guards.Guards.requireNonNull;
 import javax.persistence.*;
 
 import co.haruk.sms.business.structure.patient.domain.model.PatientId;
+import co.haruk.sms.common.model.Schedule;
 import co.haruk.sms.common.model.tenancy.PdailyTenantEntity;
 
 @Entity
@@ -29,6 +30,18 @@ public class FoodSchedule extends PdailyTenantEntity<FoodScheduleId> {
 		setId( id );
 		setPatientId( patientId );
 		setSchedule( schedule );
+	}
+
+	public static FoodSchedule of(FoodScheduleId id, PatientId patientId, Schedule schedule) {
+		return new FoodSchedule( id, patientId, schedule );
+	}
+
+	public PatientId patientId() {
+		return patientId;
+	}
+
+	public Schedule schedule() {
+		return schedule;
 	}
 
 	private void setSchedule(Schedule schedule) {

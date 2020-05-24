@@ -12,7 +12,7 @@ import co.haruk.core.domain.model.entity.PlainName;
 import co.haruk.sms.common.model.PdailyEntity;
 
 /**
- * @author cristhiank on 15/11/19
+ * @author andres2508 on 15/11/19
  **/
 @Entity
 @Table(name = "subs_licenses")

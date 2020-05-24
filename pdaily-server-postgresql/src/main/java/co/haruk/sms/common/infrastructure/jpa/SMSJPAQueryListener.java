@@ -6,7 +6,7 @@ import co.haruk.core.infrastructure.persistence.jpa.JPAQueryListener;
 import co.haruk.sms.business.structure.subsidiary.salesrep.infrastructure.persistence.SalesRepParameterBinder;
 
 /**
- * @author cristhiank on 5/3/20
+ * @author andres2508 on 5/3/20
  **/
 public class SMSJPAQueryListener implements JPAQueryListener {
 

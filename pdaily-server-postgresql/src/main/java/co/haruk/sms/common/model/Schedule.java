@@ -1,4 +1,4 @@
-package co.haruk.sms.events.food.schedule.domain.model;
+package co.haruk.sms.common.model;
 
 import static co.haruk.core.domain.model.guards.Guards.require;
 

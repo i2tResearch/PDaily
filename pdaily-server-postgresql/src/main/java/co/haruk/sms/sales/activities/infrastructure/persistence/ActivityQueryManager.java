@@ -6,7 +6,7 @@ import co.haruk.sms.common.infrastructure.session.HarukSession;
 import co.haruk.sms.sales.activities.domain.model.Activity;
 
 /**
- * @author cristhiank on 10/5/20
+ * @author andres2508 on 10/5/20
  **/
 class ActivityQueryManager {
 	static final String idQuery = "SELECT a.id FROM Activity a WHERE a.tenant = :tenant";

@@ -15,7 +15,7 @@ import co.haruk.sms.common.model.PdailyEntity;
 import co.haruk.sms.common.model.TaxID;
 
 /**
- * @author cristhiank on 30/10/19
+ * @author andres2508 on 30/10/19
  **/
 @Entity
 @Table(name = "subs_accounts")

@@ -9,7 +9,7 @@ import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
 
 /**
- * @author cristhiank on 1/5/20
+ * @author andres2508 on 1/5/20
  **/
 @MappedSuperclass
 public abstract class SimpleStringId implements Serializable {

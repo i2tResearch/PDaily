@@ -9,7 +9,7 @@ import co.haruk.sms.common.model.tenancy.TenantId;
 import co.haruk.sms.security.user.app.UserDTO;
 
 /**
- * @author cristhiank on 14/11/19
+ * @author andres2508 on 14/11/19
  **/
 public final class HarukSession {
 	private static final ThreadLocal<TenantId> currentTenant = new ThreadLocal<>();

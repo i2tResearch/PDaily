@@ -13,7 +13,7 @@ import co.haruk.sms.subscription.license.domain.model.LicenseValidator;
 import co.haruk.sms.subscription.license.infrastructure.persistence.LicenseRepository;
 
 /**
- * @author cristhiank on 15/11/19
+ * @author andres2508 on 15/11/19
  **/
 @ApplicationScoped
 public class LicenseAppService {

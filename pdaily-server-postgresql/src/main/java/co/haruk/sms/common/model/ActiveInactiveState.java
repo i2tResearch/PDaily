@@ -3,7 +3,7 @@ package co.haruk.sms.common.model;
 import co.haruk.core.infrastructure.persistence.jpa.converters.BaseDBEnumConverter;
 
 /**
- * @author cristhiank on 10/12/19
+ * @author andres2508 on 10/12/19
  **/
 public enum ActiveInactiveState implements BaseDBEnumConverter.DBEnumValue {
 	ACTIVE( "A" ),

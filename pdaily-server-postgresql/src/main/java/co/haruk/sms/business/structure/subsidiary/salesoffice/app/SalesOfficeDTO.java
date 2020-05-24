@@ -9,7 +9,7 @@ import co.haruk.sms.business.structure.subsidiary.salesoffice.domain.model.Sales
 import co.haruk.sms.common.model.Reference;
 
 /**
- * @author cristhiank on 21/11/19
+ * @author andres2508 on 21/11/19
  **/
 public final class SalesOfficeDTO implements Serializable {
 	public String id;

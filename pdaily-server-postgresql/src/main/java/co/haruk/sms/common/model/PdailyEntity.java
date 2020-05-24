@@ -7,7 +7,7 @@ import java.util.function.Predicate;
 import javax.persistence.MappedSuperclass;
 
 /**
- * @author cristhiank on 14/11/19
+ * @author andres2508 on 14/11/19
  **/
 @MappedSuperclass
 public abstract class PdailyEntity<T> {

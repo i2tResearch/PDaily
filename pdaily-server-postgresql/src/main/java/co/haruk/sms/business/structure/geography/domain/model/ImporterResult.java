@@ -1,7 +1,7 @@
 package co.haruk.sms.business.structure.geography.domain.model;
 
 /**
- * @author cristhiank on 5/12/19
+ * @author andres2508 on 5/12/19
  **/
 public final class ImporterResult {
 	private final String importer;

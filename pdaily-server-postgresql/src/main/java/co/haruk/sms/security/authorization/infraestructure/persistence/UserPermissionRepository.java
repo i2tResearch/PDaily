@@ -13,7 +13,7 @@ import co.haruk.sms.security.authorization.domain.model.permission.UserPermissio
 import co.haruk.sms.security.user.domain.model.UserId;
 
 /**
- * @author cristhiank on 1/5/20
+ * @author andres2508 on 1/5/20
  **/
 @ApplicationScoped
 public class UserPermissionRepository extends JPARepository<UserPermission> {

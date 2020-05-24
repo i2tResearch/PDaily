@@ -13,7 +13,7 @@ import co.haruk.sms.business.structure.address.domain.model.view.AddressReadView
 import co.haruk.sms.business.structure.address.infrastructure.persistence.AddressRepository;
 
 /**
- * @author cristhiank on 6/12/19
+ * @author andres2508 on 6/12/19
  **/
 @ApplicationScoped
 public class AddressService {

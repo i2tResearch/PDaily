@@ -8,7 +8,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * @author cristhiank on 30/10/19
+ * @author andres2508 on 30/10/19
  **/
 public class Version implements Comparable<Version> {
 	private static final Pattern versionPattern = Pattern.compile( "^\\d+.\\d+.\\d+$" );

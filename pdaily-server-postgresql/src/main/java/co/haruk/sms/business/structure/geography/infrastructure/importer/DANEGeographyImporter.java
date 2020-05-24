@@ -20,7 +20,7 @@ import co.haruk.sms.common.model.Reference;
 import io.quarkus.arc.Unremovable;
 
 /**
- * @author cristhiank on 2/12/19
+ * @author andres2508 on 2/12/19
  **/
 @Dependent
 @Unremovable

@@ -16,7 +16,7 @@ import co.haruk.sms.business.structure.subsidiary.salesoffice.app.SalesOfficeApp
 import co.haruk.sms.business.structure.subsidiary.salesoffice.app.SalesOfficeDTO;
 
 /**
- * @author cristhiank on 21/11/19
+ * @author andres2508 on 21/11/19
  **/
 @Path("/business/sales-office")
 @Produces(MediaType.APPLICATION_JSON)

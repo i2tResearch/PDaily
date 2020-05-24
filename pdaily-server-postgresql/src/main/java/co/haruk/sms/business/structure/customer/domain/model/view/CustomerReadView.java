@@ -7,7 +7,7 @@ import co.haruk.sms.business.structure.customer.domain.model.CustomerType;
 import co.haruk.sms.common.model.ActiveInactiveState;
 
 /**
- * @author cristhiank on 9/12/19
+ * @author andres2508 on 9/12/19
  **/
 public final class CustomerReadView {
 	public String id;

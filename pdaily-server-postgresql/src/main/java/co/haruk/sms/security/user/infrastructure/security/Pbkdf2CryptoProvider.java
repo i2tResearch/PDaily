@@ -13,7 +13,7 @@ import co.haruk.sms.security.user.domain.model.IEncryptionProvider;
 import co.haruk.sms.security.user.domain.model.Password;
 
 /**
- * @author cristhiank on 9/2/20
+ * @author andres2508 on 9/2/20
  **/
 @Dependent
 public class Pbkdf2CryptoProvider implements IEncryptionProvider {

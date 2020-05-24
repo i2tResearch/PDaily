@@ -18,7 +18,7 @@ import co.haruk.sms.business.structure.geography.domain.model.view.CityTextView;
 import co.haruk.sms.common.model.Reference;
 
 /**
- * @author cristhiank on 2/12/19
+ * @author andres2508 on 2/12/19
  **/
 @ApplicationScoped
 public class CityRepository extends JPARepository<City> {

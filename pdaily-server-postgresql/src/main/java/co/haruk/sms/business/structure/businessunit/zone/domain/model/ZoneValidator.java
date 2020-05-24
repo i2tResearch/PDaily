@@ -11,7 +11,7 @@ import co.haruk.sms.business.structure.businessunit.zone.infrastructure.persiste
 import co.haruk.sms.business.structure.customer.infrastructure.persistence.CustomerRepository;
 
 /**
- * @author cristhiank on 24/11/19
+ * @author andres2508 on 24/11/19
  **/
 @Dependent
 public class ZoneValidator {

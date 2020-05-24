@@ -16,7 +16,7 @@ import co.haruk.sms.security.user.domain.model.UserName;
 import co.haruk.sms.subscription.account.domain.model.AccountId;
 
 /**
- * @author cristhiank on 16/11/19
+ * @author andres2508 on 16/11/19
  **/
 @ApplicationScoped
 public class UserRepository extends JPARepository<User> {

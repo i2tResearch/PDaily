@@ -10,7 +10,7 @@ import co.haruk.sms.business.structure.subsidiary.salesrep.app.SalesRepAppServic
 import co.haruk.sms.security.user.infrastructure.persistence.UserRepository;
 
 /**
- * @author cristhiank on 16/11/19
+ * @author andres2508 on 16/11/19
  **/
 @Dependent
 public class UserValidator {

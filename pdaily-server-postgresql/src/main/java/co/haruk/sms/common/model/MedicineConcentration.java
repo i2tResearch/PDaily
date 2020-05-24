@@ -4,22 +4,22 @@ import javax.persistence.Column;
 import javax.persistence.Embeddable;
 
 @Embeddable
-public class MedicineDose {
+public class MedicineConcentration {
 	// Hace referencia que todos los valores que se ingresen seran en miligramgos
 	public final static String TYPE_DOSE = "mg";
 
 	@Column
 	private int value;
 
-	protected MedicineDose() {
+	protected MedicineConcentration() {
 	}
 
-	private MedicineDose(int value) {
+	private MedicineConcentration(int value) {
 		setValue( value );
 	}
 
-	public static MedicineDose of(int value) {
-		return new MedicineDose( value );
+	public static MedicineConcentration of(int value) {
+		return new MedicineConcentration( value );
 	}
 
 	private void setValue(int value) {

@@ -13,7 +13,7 @@ import co.haruk.sms.common.model.UTCDateTime;
 import co.haruk.sms.security.user.domain.model.UserName;
 
 /**
- * @author cristhiank on 1/5/20
+ * @author andres2508 on 1/5/20
  **/
 @Entity
 @Table(name = "security_auth_user_permissions")

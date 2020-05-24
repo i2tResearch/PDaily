@@ -6,7 +6,7 @@ import co.haruk.core.StreamUtils;
 import co.haruk.sms.security.authorization.domain.model.AuthorizationGroup;
 
 /**
- * @author cristhiank on 1/5/20
+ * @author andres2508 on 1/5/20
  **/
 public class AuthorizationGroupDTO {
 	public String id;

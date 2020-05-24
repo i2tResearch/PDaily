@@ -21,7 +21,7 @@ import co.haruk.core.domain.model.guards.Guards;
 import co.haruk.sms.core.database.upgrader.scanner.PathUtils;
 
 /**
- * @author cristhiank on 30/10/19
+ * @author andres2508 on 30/10/19
  **/
 public class MigrationFile implements Comparable<MigrationFile> {
 	private static final Pattern filePattern = Pattern.compile( "^V(\\d+.\\d+.\\d+)__.*\\.sql$" );

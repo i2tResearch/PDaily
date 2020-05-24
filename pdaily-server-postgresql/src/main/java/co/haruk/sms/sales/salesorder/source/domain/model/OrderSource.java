@@ -12,7 +12,7 @@ import co.haruk.core.domain.model.entity.PlainName;
 import co.haruk.sms.common.model.tenancy.PdailyTenantEntity;
 
 /**
- * @author cristhiank on 23/12/19
+ * @author andres2508 on 23/12/19
  **/
 @Entity
 @Table(name = "sales_order_sources")

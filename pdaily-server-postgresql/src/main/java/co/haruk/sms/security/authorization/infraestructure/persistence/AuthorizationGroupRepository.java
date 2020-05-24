@@ -9,7 +9,7 @@ import co.haruk.sms.security.authorization.domain.model.AuthorizationGroup;
 import co.haruk.sms.security.authorization.domain.model.AuthorizationGroupId;
 
 /**
- * @author cristhiank on 1/5/20
+ * @author andres2508 on 1/5/20
  **/
 @ApplicationScoped
 public class AuthorizationGroupRepository extends JPARepository<AuthorizationGroup> {

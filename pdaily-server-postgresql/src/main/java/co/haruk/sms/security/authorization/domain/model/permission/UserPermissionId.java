@@ -14,7 +14,7 @@ import co.haruk.sms.security.authorization.domain.model.ProtectedActivityId;
 import co.haruk.sms.security.user.domain.model.UserId;
 
 /**
- * @author cristhiank on 1/5/20
+ * @author andres2508 on 1/5/20
  **/
 @Embeddable
 public class UserPermissionId implements Serializable {

@@ -14,7 +14,7 @@ import co.haruk.sms.common.model.Reference;
 import co.haruk.sms.common.model.TaxID;
 
 /**
- * @author cristhiank on 9/12/19
+ * @author andres2508 on 9/12/19
  **/
 public final class CustomerRequestDTO {
 	public String id;

@@ -1,7 +1,7 @@
 package co.haruk.sms.sales.salesorder.source;
 
 /**
- * @author cristhiank on 23/12/19
+ * @author andres2508 on 23/12/19
  **/
 public final class OrderSourceTesting {
 	public static final String ORDER_SOURCE_ID = "4EDB9A68-FA61-4581-85B3-0670868E73F9";

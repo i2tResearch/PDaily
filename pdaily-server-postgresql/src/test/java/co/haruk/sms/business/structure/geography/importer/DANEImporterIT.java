@@ -15,7 +15,7 @@ import co.haruk.sms.business.structure.geography.infrastructure.importer.DANEGeo
 import co.haruk.testing.SMSTest;
 
 /**
- * @author cristhiank on 2/12/19
+ * @author andres2508 on 2/12/19
  **/
 @SMSTest
 @Tag("cdi")

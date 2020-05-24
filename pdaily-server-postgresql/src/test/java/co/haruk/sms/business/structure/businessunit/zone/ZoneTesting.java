@@ -1,7 +1,7 @@
 package co.haruk.sms.business.structure.businessunit.zone;
 
 /**
- * @author cristhiank on 24/11/19
+ * @author andres2508 on 24/11/19
  **/
 public final class ZoneTesting {
 	public static final String ZONE_ID = "A2D733A9-9525-48C5-88E7-433F86D8B6DD";

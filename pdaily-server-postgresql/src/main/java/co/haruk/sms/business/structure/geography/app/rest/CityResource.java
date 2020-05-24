@@ -16,7 +16,7 @@ import co.haruk.sms.business.structure.geography.app.CityDTO;
 import co.haruk.sms.business.structure.geography.app.GeographyAppService;
 
 /**
- * @author cristhiank on 5/12/19
+ * @author andres2508 on 5/12/19
  **/
 @Path("/business/structure/geography/city")
 @Produces(MediaType.APPLICATION_JSON)

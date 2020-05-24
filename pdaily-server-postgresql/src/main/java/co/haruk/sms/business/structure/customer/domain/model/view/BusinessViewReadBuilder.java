@@ -12,7 +12,7 @@ import co.haruk.sms.business.structure.subsidiary.salesrep.domain.model.SalesRep
 import co.haruk.sms.business.structure.subsidiary.salesrep.infrastructure.persistence.SalesRepRepository;
 
 /**
- * @author cristhiank on 26/12/19
+ * @author andres2508 on 26/12/19
  **/
 @Dependent
 public class BusinessViewReadBuilder {

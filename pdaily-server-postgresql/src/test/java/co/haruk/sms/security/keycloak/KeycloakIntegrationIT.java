@@ -18,7 +18,7 @@ import co.haruk.testing.DataSets;
 import co.haruk.testing.SMSTest;
 
 /**
- * @author cristhiank on 15/2/20
+ * @author andres2508 on 15/2/20
  **/
 @SMSTest
 @DisplayName("Keycloak integration tests")

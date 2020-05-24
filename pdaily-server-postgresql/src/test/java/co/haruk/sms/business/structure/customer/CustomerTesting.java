@@ -1,7 +1,7 @@
 package co.haruk.sms.business.structure.customer;
 
 /**
- * @author cristhiank on 9/12/19
+ * @author andres2508 on 9/12/19
  **/
 public final class CustomerTesting {
 	public static final String CUSTOMER_ID = "619E1AE0-400B-494F-8E27-30A1BA6B0828";

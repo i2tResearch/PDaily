@@ -8,7 +8,7 @@ import javax.persistence.Embeddable;
 import co.haruk.core.domain.model.guards.Guards;
 
 /**
- * @author cristhiank on 6/12/19
+ * @author andres2508 on 6/12/19
  **/
 @Embeddable
 public class Geolocation implements Serializable {

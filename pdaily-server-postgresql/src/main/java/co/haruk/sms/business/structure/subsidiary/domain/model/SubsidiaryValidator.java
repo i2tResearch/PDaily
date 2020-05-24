@@ -15,7 +15,7 @@ import co.haruk.sms.business.structure.subsidiary.salesoffice.infrastructure.per
 import co.haruk.sms.business.structure.subsidiary.salesrep.infrastructure.persistence.SalesRepRepository;
 
 /**
- * @author cristhiank on 19/11/19
+ * @author andres2508 on 19/11/19
  **/
 @Dependent
 public class SubsidiaryValidator {

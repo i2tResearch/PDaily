@@ -10,7 +10,7 @@ import javax.ws.rs.container.ContainerResponseFilter;
 import co.haruk.sms.startup.SMSStartup;
 
 /**
- * @author cristhiank on 11/3/20
+ * @author andres2508 on 11/3/20
  **/
 public abstract class SMSRestFilter implements ContainerRequestFilter, ContainerResponseFilter {
 

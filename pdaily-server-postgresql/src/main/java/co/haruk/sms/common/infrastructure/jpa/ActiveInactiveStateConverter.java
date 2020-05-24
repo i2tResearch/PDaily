@@ -6,7 +6,7 @@ import co.haruk.core.infrastructure.persistence.jpa.converters.BaseDBEnumConvert
 import co.haruk.sms.common.model.ActiveInactiveState;
 
 /**
- * @author cristhiank on 10/12/19
+ * @author andres2508 on 10/12/19
  **/
 @Converter
 public class ActiveInactiveStateConverter extends BaseDBEnumConverter<ActiveInactiveState> {

@@ -9,7 +9,7 @@ import co.haruk.core.domain.model.persistence.DuplicatedRecordException;
 import co.haruk.sms.business.structure.subsidiary.salesrep.infrastructure.persistence.SalesRepRepository;
 
 /**
- * @author cristhiank on 25/11/19
+ * @author andres2508 on 25/11/19
  **/
 @Dependent
 public class SalesRepValidator {

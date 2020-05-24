@@ -9,7 +9,7 @@ import java.util.Objects;
 import javax.persistence.Embeddable;
 
 /**
- * @author cristhiank on 2/12/19
+ * @author andres2508 on 2/12/19
  **/
 @Embeddable
 public class CountryIsoCode implements Serializable {

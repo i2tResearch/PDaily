@@ -1,7 +1,7 @@
 package co.haruk.sms.business.structure.customer.holding;
 
 /**
- * @author cristhiank on 1/12/19
+ * @author andres2508 on 1/12/19
  **/
 public final class HoldingTesting {
 	public static final String HOLDING_ID = "425394D1-28F7-4358-A54C-CE25DF162A02";

@@ -18,7 +18,7 @@ import co.haruk.sms.common.model.tenancy.TenantId;
 import co.haruk.testing.SMSTest;
 
 /**
- * @author cristhiank on 14/11/19
+ * @author andres2508 on 14/11/19
  **/
 @SMSTest
 @Tag("cdi")

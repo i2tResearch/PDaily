@@ -10,7 +10,7 @@ import co.haruk.sms.business.structure.geography.infrastructure.persistence.City
 import co.haruk.sms.business.structure.geography.infrastructure.persistence.StateRepository;
 
 /**
- * @author cristhiank on 2/12/19
+ * @author andres2508 on 2/12/19
  **/
 @Dependent
 public class StateValidator {

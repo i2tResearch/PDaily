@@ -18,7 +18,7 @@ import co.haruk.sms.security.authorization.infraestructure.persistence.Authoriza
 import co.haruk.sms.security.authorization.infraestructure.persistence.ProtectedActivityRepository;
 
 /**
- * @author cristhiank on 1/5/20
+ * @author andres2508 on 1/5/20
  **/
 @ApplicationScoped
 public class AuthorizationConfigurator {

@@ -3,7 +3,7 @@ package co.haruk.sms.business.structure.address.domain.model.view;
 import java.io.Serializable;
 
 /**
- * @author cristhiank on 6/12/19
+ * @author andres2508 on 6/12/19
  **/
 public final class AddressReadView implements Serializable {
 	public String id;

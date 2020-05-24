@@ -10,7 +10,7 @@ import co.haruk.sms.security.user.domain.model.UserId;
 import co.haruk.sms.security.user.domain.model.UserName;
 
 /**
- * @author cristhiank on 1/5/20
+ * @author andres2508 on 1/5/20
  **/
 public class UserPermissionDTO {
 	public String userId;

@@ -17,7 +17,7 @@ import javax.json.JsonValue;
 import co.haruk.core.StreamUtils;
 
 /**
- * @author cristhiank on 20/5/20
+ * @author andres2508 on 20/5/20
  **/
 public class ReportRowBuilder {
 	private final SortedSet<ReportColumn> columns = new TreeSet<>();

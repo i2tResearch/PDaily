@@ -19,7 +19,7 @@ import co.haruk.sms.security.authorization.app.UserPermissionDTO;
 import co.haruk.sms.subscription.account.app.AccountDTO;
 
 /**
- * @author cristhiank on 1/5/20
+ * @author andres2508 on 1/5/20
  **/
 @Path("/security/authz")
 @Consumes(MediaType.APPLICATION_JSON)

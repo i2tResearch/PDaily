@@ -31,7 +31,7 @@ import co.haruk.sms.common.model.TaxID;
 import co.haruk.sms.common.model.tenancy.PdailyTenantEntity;
 
 /**
- * @author cristhiank on 9/12/19
+ * @author andres2508 on 9/12/19
  **/
 @Entity
 @Table(name = "bs_customers")

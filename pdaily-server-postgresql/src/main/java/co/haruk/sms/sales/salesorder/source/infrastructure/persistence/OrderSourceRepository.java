@@ -12,7 +12,7 @@ import co.haruk.core.infrastructure.persistence.jpa.JPARepository;
 import co.haruk.sms.sales.salesorder.source.domain.model.OrderSource;
 
 /**
- * @author cristhiank on 23/12/19
+ * @author andres2508 on 23/12/19
  **/
 @ApplicationScoped
 public class OrderSourceRepository extends JPARepository<OrderSource> {

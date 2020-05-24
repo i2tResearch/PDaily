@@ -16,7 +16,7 @@ import co.haruk.sms.business.structure.subsidiary.app.SubsidiaryAppService;
 import co.haruk.sms.business.structure.subsidiary.app.SubsidiaryDTO;
 
 /**
- * @author cristhiank on 19/11/19
+ * @author andres2508 on 19/11/19
  **/
 @Path("/business/subsidiary")
 @Produces(MediaType.APPLICATION_JSON)

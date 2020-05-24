@@ -13,7 +13,7 @@ import co.haruk.sms.business.structure.subsidiary.domain.model.Subsidiary;
 import co.haruk.sms.common.model.Reference;
 
 /**
- * @author cristhiank on 19/11/19
+ * @author andres2508 on 19/11/19
  **/
 @ApplicationScoped
 public class SubsidiaryRepository extends JPARepository<Subsidiary> {

@@ -1,7 +1,7 @@
 package co.haruk.sms.security.user;
 
 /**
- * @author cristhiank on 14/11/19
+ * @author andres2508 on 14/11/19
  **/
 public final class UserTesting {
 	public static final String USER_ID = "5D7BAD11-3721-4E56-B17F-CDF91B598FBD";

@@ -6,7 +6,7 @@ import co.haruk.sms.business.structure.geography.domain.model.CountryId;
 import co.haruk.sms.business.structure.geography.domain.model.CountryIsoCode;
 
 /**
- * @author cristhiank on 2/12/19
+ * @author andres2508 on 2/12/19
  **/
 public final class CountryDTO {
 	public String id;

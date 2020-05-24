@@ -8,7 +8,7 @@ import co.haruk.sms.startup.SMSStartup;
 import io.quarkus.runtime.StartupEvent;
 
 /**
- * @author cristhiank on 20/11/19
+ * @author andres2508 on 20/11/19
  **/
 @ApplicationScoped
 public class SMSQuarkusApp {

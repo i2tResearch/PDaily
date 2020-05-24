@@ -17,7 +17,7 @@ import co.haruk.sms.security.user.app.UserAppService;
 import io.quarkus.security.identity.SecurityIdentity;
 
 /**
- * @author cristhiank on 14/11/19
+ * @author andres2508 on 14/11/19
  **/
 @Priority(2)
 @Provider

@@ -13,7 +13,7 @@ import co.haruk.sms.business.structure.geography.app.GeographyAppService;
 import co.haruk.sms.business.structure.geography.domain.model.ImporterResult;
 
 /**
- * @author cristhiank on 2/12/19
+ * @author andres2508 on 2/12/19
  **/
 @Path("/business/structure/geography")
 @Produces(MediaType.APPLICATION_JSON)

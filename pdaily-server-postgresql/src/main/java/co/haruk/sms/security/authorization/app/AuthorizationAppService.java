@@ -25,7 +25,7 @@ import co.haruk.sms.subscription.account.app.AccountAppService;
 import co.haruk.sms.subscription.account.app.AccountDTO;
 
 /**
- * @author cristhiank on 1/5/20
+ * @author andres2508 on 1/5/20
  **/
 @ApplicationScoped
 public class AuthorizationAppService {

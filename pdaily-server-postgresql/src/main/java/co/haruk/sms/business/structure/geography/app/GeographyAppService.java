@@ -16,7 +16,7 @@ import co.haruk.sms.business.structure.geography.domain.model.State;
 import co.haruk.sms.business.structure.geography.domain.model.StateId;
 
 /**
- * @author cristhiank on 2/12/19
+ * @author andres2508 on 2/12/19
  **/
 @ApplicationScoped
 public class GeographyAppService {

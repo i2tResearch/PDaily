@@ -18,7 +18,7 @@ import co.haruk.sms.subscription.account.domain.model.AccountId;
 import co.haruk.sms.subscription.license.domain.model.LicenseId;
 
 /**
- * @author cristhiank on 15/11/19
+ * @author andres2508 on 15/11/19
  **/
 @Entity
 @Table(name = "security_users")

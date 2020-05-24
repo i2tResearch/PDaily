@@ -16,7 +16,7 @@ import co.haruk.sms.sales.salesorder.source.app.OrderSourceAppService;
 import co.haruk.sms.sales.salesorder.source.app.OrderSourceDTO;
 
 /**
- * @author cristhiank on 23/12/19
+ * @author andres2508 on 23/12/19
  **/
 @Path("/sales/order/source")
 @Consumes(MediaType.APPLICATION_JSON)

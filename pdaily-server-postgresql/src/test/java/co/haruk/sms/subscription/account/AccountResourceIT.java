@@ -22,7 +22,7 @@ import co.haruk.testing.DataSets;
 import co.haruk.testing.SMSTest;
 
 /**
- * @author cristhiank on 30/10/19
+ * @author andres2508 on 30/10/19
  **/
 @SMSTest
 @DisplayName("Account tests")

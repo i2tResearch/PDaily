@@ -5,7 +5,7 @@ import java.util.Map;
 import co.haruk.core.domain.model.entity.PlainName;
 
 /**
- * @author cristhiank on 1/5/20
+ * @author andres2508 on 1/5/20
  **/
 public class AuthorizationGroupBuilder {
 	private final AuthorizationGroup group;

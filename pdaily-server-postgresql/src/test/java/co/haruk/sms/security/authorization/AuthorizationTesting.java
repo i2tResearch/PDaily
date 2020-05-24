@@ -1,7 +1,7 @@
 package co.haruk.sms.security.authorization;
 
 /**
- * @author cristhiank on 2/5/20
+ * @author andres2508 on 2/5/20
  **/
 public final class AuthorizationTesting {
 	public static final String ACTIVITY_ID_INEXISTENT = "INEXISTENT";

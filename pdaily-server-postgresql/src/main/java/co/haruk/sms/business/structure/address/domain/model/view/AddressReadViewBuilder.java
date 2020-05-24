@@ -8,7 +8,7 @@ import co.haruk.sms.business.structure.geography.domain.model.GeographyService;
 import co.haruk.sms.business.structure.geography.domain.model.view.CityTextView;
 
 /**
- * @author cristhiank on 7/12/19
+ * @author andres2508 on 7/12/19
  **/
 @Dependent
 public class AddressReadViewBuilder {

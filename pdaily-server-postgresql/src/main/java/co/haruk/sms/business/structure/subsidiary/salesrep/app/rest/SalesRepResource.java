@@ -17,7 +17,7 @@ import co.haruk.sms.business.structure.subsidiary.salesrep.app.SalesRepRequestDT
 import co.haruk.sms.business.structure.subsidiary.salesrep.domain.model.view.SalesRepReadView;
 
 /**
- * @author cristhiank on 25/11/19
+ * @author andres2508 on 25/11/19
  **/
 @Path("/business/sales-rep")
 @Produces(MediaType.APPLICATION_JSON)

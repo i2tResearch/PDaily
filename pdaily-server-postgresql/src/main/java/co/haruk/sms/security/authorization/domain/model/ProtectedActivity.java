@@ -17,7 +17,7 @@ import co.haruk.core.domain.model.entity.PlainName;
 import co.haruk.sms.common.model.PdailyEntity;
 
 /**
- * @author cristhiank on 1/5/20
+ * @author andres2508 on 1/5/20
  **/
 @Entity()
 @Table(name = "security_auth_activities")

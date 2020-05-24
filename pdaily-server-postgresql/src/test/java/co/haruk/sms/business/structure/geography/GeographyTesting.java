@@ -1,7 +1,7 @@
 package co.haruk.sms.business.structure.geography;
 
 /**
- * @author cristhiank on 5/12/19
+ * @author andres2508 on 5/12/19
  **/
 public final class GeographyTesting {
 	public static final String COUNTRY_ID = "B27258E4-66CB-4F1B-99E3-6EAD3FFC27A7";

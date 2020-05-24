@@ -15,7 +15,7 @@ import co.haruk.sms.common.model.Reference;
 import co.haruk.sms.common.model.tenancy.PdailyTenantEntity;
 
 /**
- * @author cristhiank on 25/11/19
+ * @author andres2508 on 25/11/19
  **/
 @Entity
 @Table(name = "bs_sales_reps")

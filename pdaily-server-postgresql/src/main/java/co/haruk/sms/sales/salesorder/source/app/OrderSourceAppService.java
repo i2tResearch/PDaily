@@ -13,7 +13,7 @@ import co.haruk.sms.sales.salesorder.source.domain.model.OrderSourceValidator;
 import co.haruk.sms.sales.salesorder.source.infrastructure.persistence.OrderSourceRepository;
 
 /**
- * @author cristhiank on 23/12/19
+ * @author andres2508 on 23/12/19
  **/
 @ApplicationScoped
 public class OrderSourceAppService {

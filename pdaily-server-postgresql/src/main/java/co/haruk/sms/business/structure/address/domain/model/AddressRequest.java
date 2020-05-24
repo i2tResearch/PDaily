@@ -8,7 +8,7 @@ import co.haruk.sms.business.structure.geography.domain.model.CityId;
 import co.haruk.sms.common.model.Reference;
 
 /**
- * @author cristhiank on 10/12/19
+ * @author andres2508 on 10/12/19
  **/
 public final class AddressRequest {
 	public String id;

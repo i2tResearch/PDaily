@@ -5,7 +5,7 @@ import javax.persistence.Embeddable;
 import co.haruk.sms.common.model.SimpleStringId;
 
 /**
- * @author cristhiank on 1/5/20
+ * @author andres2508 on 1/5/20
  **/
 @Embeddable
 public class AuthorizationGroupId extends SimpleStringId {

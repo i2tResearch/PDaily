@@ -1,7 +1,7 @@
 package co.haruk.sms.business.structure.subsidiary.salesoffice;
 
 /**
- * @author cristhiank on 19/11/19
+ * @author andres2508 on 19/11/19
  **/
 public final class SalesOfficeTesting {
 	public static final String SALES_OFF_ID = "2B363BE0-5A7A-4C57-914B-9BE2FD3D2551";

@@ -8,7 +8,7 @@ import javax.json.Json;
 import javax.json.JsonValue;
 
 /**
- * @author cristhiank on 20/5/20
+ * @author andres2508 on 20/5/20
  **/
 public enum ColumnType {
 	STRING( Json::createValue ),

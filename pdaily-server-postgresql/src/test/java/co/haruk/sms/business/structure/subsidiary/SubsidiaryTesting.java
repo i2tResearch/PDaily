@@ -1,7 +1,7 @@
 package co.haruk.sms.business.structure.subsidiary;
 
 /**
- * @author cristhiank on 19/11/19
+ * @author andres2508 on 19/11/19
  **/
 public final class SubsidiaryTesting {
 	public static final String SUBSIDIARY_ID = "AE37BE1D-13CC-483A-AE83-F6BF53BB8B57";

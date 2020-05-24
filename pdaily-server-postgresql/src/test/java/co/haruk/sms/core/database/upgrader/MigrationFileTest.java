@@ -9,7 +9,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 /**
- * @author cristhiank on 8/12/19
+ * @author andres2508 on 8/12/19
  **/
 @DisplayName("MigrationFile tests")
 class MigrationFileTest {

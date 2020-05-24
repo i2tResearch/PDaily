@@ -35,7 +35,7 @@ import co.haruk.testing.DataSets;
 import co.haruk.testing.SMSTest;
 
 /**
- * @author cristhiank on 6/12/19
+ * @author andres2508 on 6/12/19
  **/
 @SMSTest
 @Tag("cdi")

@@ -7,7 +7,7 @@ import javax.enterprise.context.ApplicationScoped;
 import co.haruk.core.infrastructure.persistence.jpa.JPARepository;
 
 /**
- * @author cristhiank on 19/11/19
+ * @author andres2508 on 19/11/19
  **/
 @ApplicationScoped
 public class TestRepository extends JPARepository<TestTenantEntity> {

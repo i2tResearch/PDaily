@@ -4,7 +4,7 @@ import co.haruk.sms.common.model.UTCDateTime;
 import co.haruk.sms.common.model.tenancy.TenantId;
 
 /**
- * @author cristhiank on 20/2/20
+ * @author andres2508 on 20/2/20
  **/
 public final class ActivityUpdatedEvent extends ActivityEvent {
 

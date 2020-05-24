@@ -3,7 +3,7 @@ package co.haruk.sms.sales.activities.domain.model;
 import co.haruk.sms.common.model.tenancy.TenantId;
 
 /**
- * @author cristhiank on 20/2/20
+ * @author andres2508 on 20/2/20
  **/
 public abstract class ActivityEvent {
 	private final ActivityId activityId;

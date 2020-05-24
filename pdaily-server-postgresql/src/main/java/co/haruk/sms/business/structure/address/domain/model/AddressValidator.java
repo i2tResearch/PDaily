@@ -7,7 +7,7 @@ import co.haruk.core.domain.model.guards.Guards;
 import co.haruk.sms.business.structure.address.infrastructure.persistence.AddressRepository;
 
 /**
- * @author cristhiank on 7/12/19
+ * @author andres2508 on 7/12/19
  **/
 @Dependent
 public class AddressValidator {

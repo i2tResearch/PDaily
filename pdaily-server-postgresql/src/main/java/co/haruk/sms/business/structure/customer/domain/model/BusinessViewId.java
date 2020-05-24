@@ -13,7 +13,7 @@ import javax.persistence.Embedded;
 import co.haruk.sms.business.structure.businessunit.domain.model.BusinessUnitId;
 
 /**
- * @author cristhiank on 26/12/19
+ * @author andres2508 on 26/12/19
  **/
 @Embeddable
 public final class BusinessViewId implements Serializable {

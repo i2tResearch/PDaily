@@ -9,7 +9,7 @@ import co.haruk.core.domain.model.persistence.DuplicatedRecordException;
 import co.haruk.sms.subscription.account.infrastructure.persistence.AccountRepository;
 
 /**
- * @author cristhiank on 14/11/19
+ * @author andres2508 on 14/11/19
  **/
 @Dependent
 public class AccountValidator {

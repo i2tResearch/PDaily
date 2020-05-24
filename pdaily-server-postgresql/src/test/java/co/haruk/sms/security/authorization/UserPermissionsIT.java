@@ -19,7 +19,7 @@ import co.haruk.testing.DataSets;
 import co.haruk.testing.SMSTest;
 
 /**
- * @author cristhiank on 2/5/20
+ * @author andres2508 on 2/5/20
  **/
 @SMSTest
 @DisplayName("User permissions tests")

@@ -3,7 +3,7 @@ package co.haruk.sms.security.app.keycloak;
 import co.haruk.sms.subscription.account.app.AccountDTO;
 
 /**
- * @author cristhiank on 15/2/20
+ * @author andres2508 on 15/2/20
  **/
 public class KeycloakGroupDTO {
 	public String id;

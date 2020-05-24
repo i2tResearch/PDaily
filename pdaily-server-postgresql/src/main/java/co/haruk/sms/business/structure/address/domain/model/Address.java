@@ -17,7 +17,7 @@ import co.haruk.sms.common.model.Reference;
 import co.haruk.sms.common.model.tenancy.PdailyTenantEntity;
 
 /**
- * @author cristhiank on 2/12/19
+ * @author andres2508 on 2/12/19
  **/
 @Entity
 @Table(name = "bs_addresses")

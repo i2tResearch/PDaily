@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author cristhiank on 20/5/20
+ * @author andres2508 on 20/5/20
  **/
 public final class ReportRow {
 	private final Map<Integer, String> columns = new HashMap<>();

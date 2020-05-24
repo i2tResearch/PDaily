@@ -12,13 +12,13 @@ import co.haruk.sms.common.infrastructure.session.HarukSession;
 import co.haruk.sms.common.model.tenancy.TenantId;
 
 /**
- * @author cristhiank on 14/11/19
+ * @author andres2508 on 14/11/19
  **/
 @Priority(1)
 @Provider
 @PreMatching
 public class TenantRestFilter extends SMSRestFilter {
-	private static final String TENANT_HEADER = "haruk-tenant";
+	private static final String TENANT_HEADER = "pdaily-tenant";
 
 	@Override
 	public void doFilter(ContainerRequestContext requestContext) {

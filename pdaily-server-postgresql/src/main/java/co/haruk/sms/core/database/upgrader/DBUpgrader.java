@@ -9,7 +9,7 @@ import java.util.logging.Logger;
 import javax.sql.DataSource;
 
 /**
- * @author cristhiank on 30/10/19
+ * @author andres2508 on 30/10/19
  **/
 public class DBUpgrader {
 	private static final Logger log = Logger.getLogger( DBUpgrader.class.getName() );

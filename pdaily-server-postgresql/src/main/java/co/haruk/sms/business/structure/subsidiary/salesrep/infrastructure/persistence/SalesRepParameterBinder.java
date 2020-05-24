@@ -7,7 +7,7 @@ import co.haruk.sms.business.structure.subsidiary.salesrep.domain.model.SalesRep
 import co.haruk.sms.common.infrastructure.session.HarukSession;
 
 /**
- * @author cristhiank on 5/3/20
+ * @author andres2508 on 5/3/20
  **/
 public final class SalesRepParameterBinder implements JPAQueryParameterBinder {
 	public static SalesRepParameterBinder INSTANCE = new SalesRepParameterBinder();

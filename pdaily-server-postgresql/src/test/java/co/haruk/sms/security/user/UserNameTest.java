@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 import co.haruk.sms.security.user.domain.model.UserName;
 
 /**
- * @author cristhiank on 16/11/19
+ * @author andres2508 on 16/11/19
  **/
 @DisplayName("UserName tests")
 class UserNameTest {

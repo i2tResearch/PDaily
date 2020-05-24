@@ -10,7 +10,7 @@ import co.haruk.core.infrastructure.persistence.jpa.JPARepository;
 import co.haruk.sms.subscription.license.domain.model.License;
 
 /**
- * @author cristhiank on 15/11/19
+ * @author andres2508 on 15/11/19
  **/
 @ApplicationScoped
 public class LicenseRepository extends JPARepository<License> {

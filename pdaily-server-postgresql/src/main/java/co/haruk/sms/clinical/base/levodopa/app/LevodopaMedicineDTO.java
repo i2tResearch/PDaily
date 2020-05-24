@@ -4,7 +4,7 @@ import co.haruk.core.domain.model.entity.PlainName;
 import co.haruk.sms.clinical.base.levodopa.domain.model.LevodopaMedicine;
 import co.haruk.sms.clinical.base.levodopa.domain.model.LevodopaMedicineId;
 import co.haruk.sms.clinical.base.levodopa.type.domain.model.LevodopaTypeId;
-import co.haruk.sms.common.model.MedicineDose;
+import co.haruk.sms.common.model.MedicineConcentration;
 
 public class LevodopaMedicineDTO {
 	public String id;
@@ -40,7 +40,7 @@ public class LevodopaMedicineDTO {
 				LevodopaMedicineId.of( id ),
 				PlainName.of( name ),
 				LevodopaTypeId.ofNotNull( typeId ),
-				MedicineDose.of( dose )
+				MedicineConcentration.of( dose )
 		);
 	}
 }

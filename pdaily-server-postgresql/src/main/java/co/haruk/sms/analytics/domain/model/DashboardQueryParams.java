@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author cristhiank on 23/5/20
+ * @author andres2508 on 23/5/20
  **/
 public class DashboardQueryParams {
 	private final Map<String, Object> params = new HashMap<>();

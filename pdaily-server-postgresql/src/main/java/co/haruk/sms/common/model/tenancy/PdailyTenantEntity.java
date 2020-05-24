@@ -12,7 +12,7 @@ import co.haruk.sms.common.infrastructure.jpa.TenantEntityListener;
 import co.haruk.sms.common.model.PdailyEntity;
 
 /**
- * @author cristhiank on 14/11/19
+ * @author andres2508 on 14/11/19
  **/
 @MappedSuperclass
 @EntityListeners(TenantEntityListener.class)

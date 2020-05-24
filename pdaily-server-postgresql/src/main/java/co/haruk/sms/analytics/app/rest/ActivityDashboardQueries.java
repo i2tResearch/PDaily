@@ -5,7 +5,7 @@ import co.haruk.sms.analytics.domain.model.DashboardQuery;
 /**
  * TODO: Eliminar en version 5. Deben venir del front
  * 
- * @author cristhiank on 23/5/20
+ * @author andres2508 on 23/5/20
  **/
 public enum ActivityDashboardQueries {
 	PURPOSE_COUNT( DashboardQuery.of( "PURPOSE_COUNT", "analytics/activities/purpose_count.sql" ) ),

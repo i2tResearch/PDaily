@@ -14,7 +14,7 @@ import co.haruk.sms.business.structure.geography.domain.model.Country;
 import co.haruk.sms.business.structure.geography.domain.model.CountryIsoCode;
 
 /**
- * @author cristhiank on 2/12/19
+ * @author andres2508 on 2/12/19
  **/
 @ApplicationScoped
 public class CountryRepository extends JPARepository<Country> {

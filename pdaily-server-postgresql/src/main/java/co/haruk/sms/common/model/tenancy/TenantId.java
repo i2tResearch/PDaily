@@ -6,7 +6,7 @@ import co.haruk.core.domain.model.entity.Identity;
 import co.haruk.core.domain.model.session.ITenantId;
 
 /**
- * @author cristhiank on 15/11/19
+ * @author andres2508 on 15/11/19
  **/
 @Embeddable
 public class TenantId extends Identity implements ITenantId {

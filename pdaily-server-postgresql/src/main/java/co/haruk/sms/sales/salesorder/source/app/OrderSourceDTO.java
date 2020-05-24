@@ -5,7 +5,7 @@ import co.haruk.sms.sales.salesorder.source.domain.model.OrderSource;
 import co.haruk.sms.sales.salesorder.source.domain.model.OrderSourceId;
 
 /**
- * @author cristhiank on 23/12/19
+ * @author andres2508 on 23/12/19
  **/
 public final class OrderSourceDTO {
 	public String id;

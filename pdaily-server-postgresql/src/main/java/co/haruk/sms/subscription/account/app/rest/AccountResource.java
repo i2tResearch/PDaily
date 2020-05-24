@@ -16,7 +16,7 @@ import co.haruk.sms.subscription.account.app.AccountAppService;
 import co.haruk.sms.subscription.account.app.AccountDTO;
 
 /**
- * @author cristhiank on 30/10/19
+ * @author andres2508 on 30/10/19
  **/
 @Path("/subscription/account")
 @Consumes(MediaType.APPLICATION_JSON)

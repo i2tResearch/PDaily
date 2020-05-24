@@ -25,7 +25,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import co.haruk.core.testing.HarukTest;
 
 /**
- * @author cristhiank on 8/11/19
+ * @author andres2508 on 8/11/19
  **/
 @HarukTest
 @Target(ElementType.TYPE)

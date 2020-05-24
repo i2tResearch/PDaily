@@ -16,7 +16,7 @@ import co.haruk.sms.business.structure.businessunit.zone.app.ZoneAppService;
 import co.haruk.sms.business.structure.businessunit.zone.app.ZoneDTO;
 
 /**
- * @author cristhiank on 24/11/19
+ * @author andres2508 on 24/11/19
  **/
 @Path("/business/structure/zone")
 @Produces(MediaType.APPLICATION_JSON)

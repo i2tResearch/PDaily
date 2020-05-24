@@ -14,7 +14,7 @@ import co.haruk.sms.business.structure.businessunit.zone.domain.model.ZoneValida
 import co.haruk.sms.business.structure.businessunit.zone.infrastructure.persistence.ZoneRepository;
 
 /**
- * @author cristhiank on 24/11/19
+ * @author andres2508 on 24/11/19
  **/
 @ApplicationScoped
 public class ZoneAppService {

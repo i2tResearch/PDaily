@@ -5,7 +5,7 @@ import static co.haruk.core.domain.model.guards.Guards.requireNonNull;
 import java.util.Map;
 
 /**
- * @author cristhiank on 1/5/20
+ * @author andres2508 on 1/5/20
  **/
 public class SimpleCRUDActivityBuilder {
 

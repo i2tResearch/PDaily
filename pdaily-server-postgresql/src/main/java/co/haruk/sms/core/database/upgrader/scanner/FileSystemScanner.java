@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 /**
  * Scanner para leer archivos directamente del disco.
  *
- * @author cristhiank on 30/10/19
+ * @author andres2508 on 30/10/19
  **/
 public final class FileSystemScanner implements ClasspathScanner {
 	private final String path;

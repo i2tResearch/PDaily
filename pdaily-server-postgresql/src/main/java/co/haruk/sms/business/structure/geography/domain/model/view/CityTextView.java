@@ -3,7 +3,7 @@ package co.haruk.sms.business.structure.geography.domain.model.view;
 import java.util.UUID;
 
 /**
- * @author cristhiank on 7/12/19
+ * @author andres2508 on 7/12/19
  **/
 public final class CityTextView {
 	public final String cityId;

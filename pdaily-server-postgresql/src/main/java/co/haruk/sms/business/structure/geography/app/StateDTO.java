@@ -7,7 +7,7 @@ import co.haruk.sms.business.structure.geography.domain.model.StateId;
 import co.haruk.sms.common.model.Reference;
 
 /**
- * @author cristhiank on 5/12/19
+ * @author andres2508 on 5/12/19
  **/
 public final class StateDTO {
 	public String id;

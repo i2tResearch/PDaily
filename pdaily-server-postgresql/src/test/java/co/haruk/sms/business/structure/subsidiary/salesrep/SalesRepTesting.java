@@ -1,7 +1,7 @@
 package co.haruk.sms.business.structure.subsidiary.salesrep;
 
 /**
- * @author cristhiank on 25/11/19
+ * @author andres2508 on 25/11/19
  **/
 public final class SalesRepTesting {
 	public static final String SALES_REP_ID = "DF20D5BD-F16A-48B0-9922-0D5E537DCB24";

@@ -7,7 +7,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 /**
- * @author cristhiank on 18/12/19
+ * @author andres2508 on 18/12/19
  **/
 @DisplayName("Reference tests")
 class ReferenceTest {

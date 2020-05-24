@@ -6,7 +6,7 @@ import java.time.ZoneOffset;
 import io.restassured.specification.RequestSpecification;
 
 /**
- * @author cristhiank on 7/3/20
+ * @author andres2508 on 7/3/20
  **/
 public final class SMSTesting {
 
