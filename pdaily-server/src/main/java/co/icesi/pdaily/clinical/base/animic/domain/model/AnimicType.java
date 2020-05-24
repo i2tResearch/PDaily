@@ -6,6 +6,7 @@ import javax.persistence.*;
 
 import co.haruk.core.domain.model.entity.PlainName;
 import co.icesi.pdaily.common.model.PdailyEntity;
+import co.icesi.pdaily.events.physical.domain.model.Intensity;
 
 @Entity
 @Table(name = "cb_animic_types")
@@ -19,25 +20,41 @@ public class AnimicType extends PdailyEntity<AnimicTypeId> {
 	@Embedded
 	@AttributeOverride(name = "name", column = @Column(name = "label"))
 	private PlainName label;
+	@Embedded
+	private Intensity intensity;
 
 	protected AnimicType() {
 	}
 
-	private AnimicType(AnimicTypeId id, PlainName label) {
+	private AnimicType(AnimicTypeId id, PlainName label, Intensity intensity) {
 		setId( id );
 		setLabel( label );
+		setIntensity( intensity );
 	}
 
-	public static AnimicType of(AnimicTypeId id, PlainName label) {
-		return new AnimicType( id, label );
+	private void setIntensity(Intensity intensity) {
+		this.intensity = requireNonNull( intensity, "El tipo de estado animico tiene que estar asociado con una intensidad." );
+	}
+
+	public static AnimicType of(AnimicTypeId id, PlainName label, Intensity intensity) {
+		return new AnimicType( id, label, intensity );
+	}
+
+	public Intensity intensity() {
+		return intensity;
 	}
 
 	public PlainName label() {
 		return label;
 	}
 
-	public void setLabel(PlainName label) {
+	private void setLabel(PlainName label) {
 		this.label = requireNonNull( label, "El label del estado de animo es necesario." );
+	}
+
+	public void updateFrom(AnimicType animicType) {
+		setLabel( animicType.label );
+		setIntensity( animicType.intensity );
 	}
 
 	@Override

@@ -19,5 +19,6 @@ CREATE TABLE IF NOT EXISTS cb_animic_types
 (
     id          UUID         NOT NULL,
     label       VARCHAR(100) NOT NULL,
+    intensity   INT          NOT NULL,
     PRIMARY KEY (id)
 ) WITH "template=partitioned, atomicity=TRANSACTIONAL_SNAPSHOT";

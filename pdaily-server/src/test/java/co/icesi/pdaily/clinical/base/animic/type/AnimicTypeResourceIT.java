@@ -55,7 +55,7 @@ public class AnimicTypeResourceIT implements IDataSetDependent {
 	@Test
 	@DisplayName("Saves a new animic type")
 	void saveAnimicType() {
-		final var dto = AnimicTypeDTO.of( null, TestNamesGenerator.generateName() );
+		final var dto = AnimicTypeDTO.of( null, TestNamesGenerator.generateName(), 10 );
 		given().contentType( MediaType.APPLICATION_JSON )
 				.body( dto )
 				.post( "/animic/type" )
@@ -70,7 +70,7 @@ public class AnimicTypeResourceIT implements IDataSetDependent {
 	@Test
 	@DisplayName("Fails if duplicated label")
 	void failsToSaveIfDuplicatedName() {
-		final var dto = AnimicTypeDTO.of( null, "EXISTENT" );
+		final var dto = AnimicTypeDTO.of( null, "EXISTENT", 10 );
 		given().contentType( MediaType.APPLICATION_JSON )
 				.body( dto )
 				.post( "/animic/type" )
@@ -81,7 +81,7 @@ public class AnimicTypeResourceIT implements IDataSetDependent {
 	@Test
 	@DisplayName("Fails if duplicated label ignoring case")
 	void failsToSaveIfDuplicatedNameIgnoreCase() {
-		final var dto = AnimicTypeDTO.of( null, " existent " );
+		final var dto = AnimicTypeDTO.of( null, " existent ", 10 );
 		given().contentType( MediaType.APPLICATION_JSON )
 				.body( dto )
 				.post( "/animic/type" )
@@ -92,7 +92,7 @@ public class AnimicTypeResourceIT implements IDataSetDependent {
 	@Test
 	@DisplayName("Updates an animic type")
 	void updatesAnimicType() {
-		final var dto = AnimicTypeDTO.of( AnimicTypeTesting.ANIMIC_TYPE_TO_UPDATE, TestNamesGenerator.generateName() );
+		final var dto = AnimicTypeDTO.of( AnimicTypeTesting.ANIMIC_TYPE_TO_UPDATE, TestNamesGenerator.generateName(), 5 );
 		given().contentType( MediaType.APPLICATION_JSON )
 				.body( dto )
 				.post( "/animic/type" )
@@ -107,7 +107,7 @@ public class AnimicTypeResourceIT implements IDataSetDependent {
 	@Test
 	@DisplayName("Fails if duplicated label on existent")
 	void failsIfDuplicatedNameOnExistent() {
-		final var dto = AnimicTypeDTO.of( AnimicTypeTesting.ANIMIC_TYPE_TO_UPDATE, " existent " );
+		final var dto = AnimicTypeDTO.of( AnimicTypeTesting.ANIMIC_TYPE_TO_UPDATE, " existent ", 6 );
 		given().contentType( MediaType.APPLICATION_JSON )
 				.body( dto )
 				.post( "/animic/type" )

@@ -1,0 +1,21 @@
+package co.haruk.sms.market.measurement.attribute.picklist;
+
+public class PickListTesting {
+	public final static String PICK_LIST_TO_UPDATE_LIST = "C284260C-8F72-4142-8B28-EF9511EA74E0";
+	public final static String PICK_MULTIPLE_LIST_TO_MARKET_ATTRIBUTE_A = "5A9FE34A-4441-45F1-8FC4-7E85B8A29A30";
+	public final static String PICK_MULTIPLE_LIST_TO_MARKET_ATTRIBUTE_B = "548D9815-16ED-4972-999D-76104B98A527";
+	public final static String PICK_SINGLE_LIST_TO_MARKET_ATTRIBUTE_A = "C6076FA9-10B0-4CF5-A972-14F625C4A608";
+	public final static String PICK_SINGLE_LIST_TO_MARKET_ATTRIBUTE_B = "1EE95E24-A94E-4DAF-8A01-A227F396EC47";
+
+	// Variables for Attribute Value validations
+	public final static String MULTIPLE_LIST_TO_VALUE_ATTRIBUTE_A = "\"3F43C31B-C1D4-402F-82AA-9300F2BDFC47\"";
+	public final static String MULTIPLE_LIST_TO_VALUE_ATTRIBUTE_B = "\"702A789A-4F62-4BD8-94C2-223210C8763D\"";
+	public final static String SINGLE_LIST_TO_VALUE_ATTRIBUTE_A = "\"AF310A10-2F39-4091-A478-2600B4B441F4\"";
+	public final static String SINGLE_LIST_TO_VALUE_ATTRIBUTE_B = "\"8508C7E8-9432-4433-AE8F-5357984F02E9\"";
+
+	// Variables for Pick List Service
+	public final static String MULTIPLE_LIST_OPTION_A = "7FBB66C5-81FF-4966-AE79-7054BA20BDBB";
+	public final static String SINGLE_LIST_OPTION_A = "5ECC96FD-6F42-4830-B826-BDF783474D4D";
+	public final static String SINGLE_LIST_OPTION_B = "F249BF7D-9E1C-469C-852B-C8FA28A58F53";
+
+}

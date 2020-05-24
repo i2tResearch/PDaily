@@ -42,3 +42,13 @@ CREATE TABLE IF NOT EXISTS event_food_events
     date                BIGINT      NOT NULL,
     PRIMARY KEY (tenant_id, id)
 )  WITH "template=partitioned, affinity_key=tenant_id, atomicity=TRANSACTIONAL_SNAPSHOT";
+
+CREATE TABLE IF NOT EXISTS event_animic_events
+(
+    tenant_id           UUID        NOT NULL,
+    id                  UUID        NOT NULL,
+    patient_id          UUID        NOT NULL,
+    type                UUID        NOT NULL,
+    ocurrence_date      BIGINT      NOT NULL,
+    PRIMARY KEY (tenant_id, id)
+)  WITH "template=partitioned, affinity_key=tenant_id, atomicity=TRANSACTIONAL_SNAPSHOT";

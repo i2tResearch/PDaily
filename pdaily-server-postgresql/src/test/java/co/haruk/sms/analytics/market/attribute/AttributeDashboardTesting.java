@@ -1,0 +1,21 @@
+package co.haruk.sms.analytics.market.attribute;
+
+public final class AttributeDashboardTesting {
+	public final static String MARKET_ATTRIBUTE_A = "96FE3358-0995-4A8A-A0A5-6F8E5C309BB1";
+	public final static String MARKET_ATTRIBUTE_B = "E2872F41-5FE8-4528-B21E-08927D1CED9B";
+	public final static String MARKET_ATTRIBUTE_C = "49D4674C-E7DD-40A8-9F47-2A46ECA3FA0E";
+	public final static String MARKET_ATTRIBUTE_D = "70BA2CDA-C56A-4C6E-A2ED-1D69FE01A6DE";
+	public final static String MARKET_ATTRIBUTE_E = "DA7A608D-2CD2-4EF1-BE10-3C96A57353F8";
+
+	public final static String MARKET_ATTRIBUTE_A_CONTACT = "AC931857-3905-4C06-AFD5-23FF6ABC6F85";
+	public final static String MARKET_ATTRIBUTE_B_CONTACT = "519696D7-FD22-450F-AEC6-96543C3C46BC";
+
+	public final static String ATTRIBUTE_A_OPTION_A = "\"C6DAFFB8-AF56-462C-AEAC-E816AC0A1E74\"";
+	public final static String ATTRIBUTE_A_OPTION_B = "\"32411F33-F861-42C3-B3DE-3B358640655B\"";
+	public final static String ATTRIBUTE_A_OPTION_C = "\"190ABD2B-9160-4060-834B-576B6D275C0B\"";
+
+	public final static String ATTRIBUTE_C_OPTION_A = "\"2CA9199C-0D6B-4F21-AC11-7BB3BDBBA0A1\"";
+	public final static String ATTRIBUTE_C_OPTION_B = "\"AC1B3E44-EA4B-495F-AFAC-886104EDF8FC\"";
+	public final static String ATTRIBUTE_C_OPTION_C = "\"14741A9F-A318-463F-A319-CE9595D8123D\"";
+
+}

@@ -30,7 +30,7 @@ public class AnimicTypeAppService {
 		AnimicType saved;
 		if ( changed.isPersistent() ) {
 			final var original = repository.findOrFail( changed.id() );
-			original.setLabel( changed.label() );
+			original.updateFrom( changed );
 			validator.validate( original );
 			saved = repository.update( original );
 		} else {
