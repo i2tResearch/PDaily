@@ -10,12 +10,15 @@ import co.haruk.core.StreamUtils;
 import co.haruk.sms.business.structure.patient.domain.model.PatientId;
 import co.haruk.sms.events.food.schedule.domain.model.FoodSchedule;
 import co.haruk.sms.events.food.schedule.domain.model.FoodScheduleId;
+import co.haruk.sms.events.food.schedule.domain.model.FoodScheduleValidator;
 import co.haruk.sms.events.food.schedule.infrastructure.persistence.FoodScheduleRepository;
 
 @ApplicationScoped
 public class FoodScheduleAppService {
 	@Inject
 	FoodScheduleRepository repository;
+	@Inject
+	FoodScheduleValidator validator;
 
 	public List<FoodScheduleDTO> findAllByPatient(String patientId) {
 		final var all = repository.findSchedulesByPatient( PatientId.of( patientId ) );
@@ -34,9 +37,11 @@ public class FoodScheduleAppService {
 		if ( changed.isPersistent() ) {
 			final var original = repository.findOrFail( changed.id() );
 			original.updateFrom( changed );
+			validator.validate( original );
 			saved = repository.update( original );
 		} else {
 			changed.setId( FoodScheduleId.generateNew() );
+			validator.validate( changed );
 			saved = repository.create( changed );
 		}
 		return FoodScheduleDTO.of( saved );

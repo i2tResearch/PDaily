@@ -50,7 +50,10 @@ public class LevodopaMedicineResourceIT implements IDataSetDependent {
 				.statusCode( 200 )
 				.body(
 						"id", equalToIgnoringCase( LevodopaMedicineTesting.LEVODOPA_MEDICINE_ID ),
-						"name", notNullValue()
+						"name", notNullValue(),
+						"typeId", notNullValue(),
+						"typeLabel", notNullValue(),
+						"dose", notNullValue()
 				);
 	}
 

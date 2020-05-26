@@ -11,9 +11,11 @@ import co.haruk.sms.common.model.tenancy.PdailyTenantEntity;
 @Entity
 @Table(name = "programming_food_schedules")
 @NamedQuery(name = FoodSchedule.findByPatient, query = "SELECT f FROM FoodSchedule f WHERE f.tenant = :company AND f.patientId = :patient")
+@NamedQuery(name = FoodSchedule.findScheduleOccurences, query = "SELECT f FROM FoodSchedule f WHERE f.tenant = :company AND f.schedule.schedule = :schedule")
 public class FoodSchedule extends PdailyTenantEntity<FoodScheduleId> {
 	private static final String PREFIX = "PhysicalEvent.";
 	public static final String findByPatient = PREFIX + "findByPatient";
+	public static final String findScheduleOccurences = PREFIX + "findScheduleOccurences";
 
 	@EmbeddedId
 	private FoodScheduleId id;

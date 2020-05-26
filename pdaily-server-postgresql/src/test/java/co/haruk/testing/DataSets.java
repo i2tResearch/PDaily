@@ -66,8 +66,10 @@ public enum DataSets implements IDataSet {
 	LEVODOPA_MEDICINE( "datasets/clinical.base/medicine_levodopa.sql", LEVODOPA_TYPE ),
 	ANIMIC_TYPE( "datasets/clinical.base/animic_type.sql" ),
 	ANIMIC_EVENT( "datasets/events/animic_event.sql", ANIMIC_TYPE ),
-	FOOD_SCHEDULE( "datasets/schedules/programming_food_schedule.sql" ),
-	LEVODOPA_SCHEDULE( "datasets/schedules/levodopa_schedules.sql", LEVODOPA_MEDICINE );
+	FOOD_SCHEDULE( "datasets/schedules/food_schedule.sql" ),
+	LEVODOPA_SCHEDULE( "datasets/schedules/levodopa_schedules.sql", LEVODOPA_MEDICINE ),
+	ROUTINE_TYPE( "datasets/clinical.base/routine_type.sql" ),
+	ROUTINE_SCHEDULE( "datasets/schedules/routine_schedule.sql", ROUTINE_TYPE );
 
 	private final String fileName;
 	private final IDataSet[] deps;

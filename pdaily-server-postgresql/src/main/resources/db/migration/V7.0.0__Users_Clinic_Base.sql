@@ -12,3 +12,10 @@ CREATE TABLE IF NOT EXISTS medicine_levodopa
     type_id    UUID         NOT NULL,
     dose_value INT          NOT NULL
 );
+
+CREATE TABLE IF NOT EXISTS cb_routine_types
+(
+    tenant_id  UUID         NOT NULL,
+    id         UUID         NOT NULL     PRIMARY KEY ,
+    label      VARCHAR      NOT NULL
+);

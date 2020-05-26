@@ -12,9 +12,22 @@ import co.haruk.sms.common.model.tenancy.PdailyTenantEntity;
 @Entity
 @Table(name = "medicine_levodopa")
 @NamedQuery(name = LevodopaMedicine.findByName, query = "SELECT l FROM LevodopaMedicine l WHERE l.tenant = :company AND UPPER(l.name) = UPPER(:name)")
+@NamedQuery(name = LevodopaMedicine.findAllAsReadView, query = "SELECT new co.haruk.sms.clinical.base.levodopa.domain.model.view.LevodopaMedicineReadView( lm.id.id, lm.name.name, lt.id.id, lt.label.name, lm.dose.value ) "
+		+
+		"FROM LevodopaMedicine lm " +
+		"INNER JOIN LevodopaType lt ON lm.typeId = lt.id " +
+		"WHERE lm.tenant = :company")
+@NamedQuery(name = LevodopaMedicine.findByIdAsReadView, query = "SELECT new co.haruk.sms.clinical.base.levodopa.domain.model.view.LevodopaMedicineReadView( lm.id.id, lm.name.name, lt.id.id, lt.label.name, lm.dose.value ) "
+		+
+		"FROM LevodopaMedicine lm " +
+		"INNER JOIN LevodopaType lt ON lm.typeId = lt.id " +
+		"WHERE lm.tenant = :company " +
+		"AND lm.id = :id")
 public class LevodopaMedicine extends PdailyTenantEntity<LevodopaMedicineId> {
 	private static final String PREFIX = "LevodopaMedicine.";
 	public static final String findByName = PREFIX + "findByName";
+	public static final String findAllAsReadView = PREFIX + "findAllAsReadView";
+	public static final String findByIdAsReadView = PREFIX + "findByIdAsReadView";
 
 	@EmbeddedId
 	private LevodopaMedicineId id;

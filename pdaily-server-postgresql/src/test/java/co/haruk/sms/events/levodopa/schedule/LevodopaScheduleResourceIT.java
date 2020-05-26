@@ -13,6 +13,7 @@ import org.junit.jupiter.api.Test;
 import co.haruk.core.testing.data.IDataSet;
 import co.haruk.core.testing.data.IDataSetDependent;
 import co.haruk.sms.clinical.base.levodopa.LevodopaMedicineTesting;
+import co.haruk.sms.events.food.schedule.app.FoodScheduleDTO;
 import co.haruk.sms.events.levodopa.schedule.app.LevodopaScheduleDTO;
 import co.haruk.sms.events.physical.PhysicalEventTesting;
 import co.haruk.testing.DataSets;
@@ -59,7 +60,7 @@ public class LevodopaScheduleResourceIT implements IDataSetDependent {
 	}
 
 	@Test
-	@DisplayName("Saves a new food schedule")
+	@DisplayName("Saves a new levodopa schedule")
 	void saveLevodopaSchedule() {
 		final var dto = LevodopaScheduleDTO.of(
 				null, PhysicalEventTesting.PATIENT_ID, LevodopaMedicineTesting.LEVODOPA_MEDICINE_ID, "12:00", 2
@@ -81,7 +82,7 @@ public class LevodopaScheduleResourceIT implements IDataSetDependent {
 	}
 
 	@Test
-	@DisplayName("Fail saves a new food schedule by bad schedule")
+	@DisplayName("Fail saves a new levodopa schedule by bad schedule")
 	void failSaveLevodopaSchedule() {
 		final var dto = LevodopaScheduleDTO.of(
 				null, PhysicalEventTesting.PATIENT_ID, LevodopaMedicineTesting.LEVODOPA_MEDICINE_ID, "12-00", 2
@@ -96,7 +97,22 @@ public class LevodopaScheduleResourceIT implements IDataSetDependent {
 	}
 
 	@Test
-	@DisplayName("Fail saves a new food schedule by dose")
+	@DisplayName("Fail saves a new levodopa schedule by dupplicated schedule")
+	void failSaveLevodopaScheduleByDupplicatedSchedule() {
+		final var dto = FoodScheduleDTO.of(
+				null, PhysicalEventTesting.PATIENT_ID, "20:00"
+		);
+		given().contentType( MediaType.APPLICATION_JSON )
+				.body( dto )
+				.log().body()
+				.post( "/schedule/food" )
+				.then()
+				.log().body()
+				.statusCode( 400 );
+	}
+
+	@Test
+	@DisplayName("Fail saves a new levodopa schedule by dose")
 	void failSaveLevodopaScheduleByDosis() {
 		final var dto = LevodopaScheduleDTO.of(
 				null, PhysicalEventTesting.PATIENT_ID, LevodopaMedicineTesting.LEVODOPA_MEDICINE_ID, "12:00", -1
@@ -111,7 +127,7 @@ public class LevodopaScheduleResourceIT implements IDataSetDependent {
 	}
 
 	@Test
-	@DisplayName("Updates an food schedule")
+	@DisplayName("Updates an levodopa schedule")
 	void updatesLevodopaSchedule() {
 		final var dto = LevodopaScheduleDTO.of(
 				LevodopaScheduleTesting.LEVODOPA_SCHEDULE_TO_UPDATE, PhysicalEventTesting.PATIENT_ID,
@@ -130,7 +146,7 @@ public class LevodopaScheduleResourceIT implements IDataSetDependent {
 	}
 
 	@Test
-	@DisplayName("Deletes an food schedule")
+	@DisplayName("Deletes an levodopa schedule")
 	void deleteById() {
 		given().contentType( MediaType.APPLICATION_JSON )
 				.delete( "/schedule/levodopa/{0}", LevodopaScheduleTesting.LEVODOPA_SCHEDULE_TO_DELETE )

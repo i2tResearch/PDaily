@@ -25,10 +25,12 @@ import co.haruk.sms.common.model.tenancy.PdailyTenantEntity;
 		"INNER JOIN LevodopaType lt ON lt.id = lm.typeId " +
 		"WHERE ls.id = :id " +
 		"AND ls.tenant = :company")
+@NamedQuery(name = LevodopaSchedule.findScheduleOccurences, query = "SELECT l FROM LevodopaSchedule l WHERE l.tenant = :company AND l.schedule.schedule = :schedule")
 public class LevodopaSchedule extends PdailyTenantEntity<LevodopaScheduleId> {
 	private static final String PREFIX = "LevodopaSchedule.";
 	public static final String findByPatientAsReadView = PREFIX + "findByPatientAsReadView";
 	public static final String findByIdAsReadView = PREFIX + "findByIdAsReadView";
+	public static final String findScheduleOccurences = PREFIX + "findScheduleOccurences";
 
 	@EmbeddedId
 	private LevodopaScheduleId id;

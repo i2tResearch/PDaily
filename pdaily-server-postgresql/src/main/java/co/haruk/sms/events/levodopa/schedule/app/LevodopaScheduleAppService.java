@@ -9,6 +9,7 @@ import javax.transaction.Transactional;
 import co.haruk.sms.business.structure.patient.domain.model.PatientId;
 import co.haruk.sms.events.levodopa.schedule.domain.model.LevodopaSchedule;
 import co.haruk.sms.events.levodopa.schedule.domain.model.LevodopaScheduleId;
+import co.haruk.sms.events.levodopa.schedule.domain.model.LevodopaScheduleValidator;
 import co.haruk.sms.events.levodopa.schedule.domain.model.view.LevodopaScheduleReadView;
 import co.haruk.sms.events.levodopa.schedule.infrastructure.persistence.LevodopaScheduleRepository;
 
@@ -16,6 +17,8 @@ import co.haruk.sms.events.levodopa.schedule.infrastructure.persistence.Levodopa
 public class LevodopaScheduleAppService {
 	@Inject
 	LevodopaScheduleRepository repository;
+	@Inject
+	LevodopaScheduleValidator validator;
 
 	public List<LevodopaScheduleReadView> findAllByPatient(String patientId) {
 		return repository.findSchedulesByPatient( PatientId.of( patientId ) );
@@ -32,9 +35,11 @@ public class LevodopaScheduleAppService {
 		if ( changed.isPersistent() ) {
 			final var original = repository.findOrFail( changed.id() );
 			original.updateFrom( changed );
+			validator.validate( original );
 			saved = repository.update( original );
 		} else {
 			changed.setId( LevodopaScheduleId.generateNew() );
+			validator.validate( changed );
 			saved = repository.create( changed );
 		}
 		return LevodopaScheduleDTO.of( saved );

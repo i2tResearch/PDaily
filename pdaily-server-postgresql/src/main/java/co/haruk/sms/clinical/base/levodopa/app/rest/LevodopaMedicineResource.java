@@ -8,6 +8,7 @@ import javax.ws.rs.core.MediaType;
 
 import co.haruk.sms.clinical.base.levodopa.app.LevodopaMedicineAppService;
 import co.haruk.sms.clinical.base.levodopa.app.LevodopaMedicineDTO;
+import co.haruk.sms.clinical.base.levodopa.domain.model.view.LevodopaMedicineReadView;
 
 @Path("/medicine/levodopa")
 @Consumes(MediaType.APPLICATION_JSON)
@@ -17,13 +18,13 @@ public class LevodopaMedicineResource {
 	LevodopaMedicineAppService appService;
 
 	@GET
-	public List<LevodopaMedicineDTO> findAll() {
+	public List<LevodopaMedicineReadView> findAll() {
 		return appService.findAll();
 	}
 
 	@GET
 	@Path("/{id}")
-	public LevodopaMedicineDTO findById(@PathParam("id") String id) {
+	public LevodopaMedicineReadView findById(@PathParam("id") String id) {
 		return appService.findById( id );
 	}
 

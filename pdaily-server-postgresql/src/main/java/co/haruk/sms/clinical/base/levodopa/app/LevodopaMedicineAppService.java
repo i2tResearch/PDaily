@@ -6,10 +6,10 @@ import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import javax.transaction.Transactional;
 
-import co.haruk.core.StreamUtils;
 import co.haruk.sms.clinical.base.levodopa.domain.model.LevodopaMedicine;
 import co.haruk.sms.clinical.base.levodopa.domain.model.LevodopaMedicineId;
 import co.haruk.sms.clinical.base.levodopa.domain.model.LevodopaMedicineValidator;
+import co.haruk.sms.clinical.base.levodopa.domain.model.view.LevodopaMedicineReadView;
 import co.haruk.sms.clinical.base.levodopa.infrastructure.persistence.LevodopaMedicineRepository;
 
 @ApplicationScoped
@@ -19,9 +19,8 @@ public class LevodopaMedicineAppService {
 	@Inject
 	LevodopaMedicineRepository repository;
 
-	public List<LevodopaMedicineDTO> findAll() {
-		List<LevodopaMedicine> all = repository.findAll();
-		return StreamUtils.map( all, LevodopaMedicineDTO::of );
+	public List<LevodopaMedicineReadView> findAll() {
+		return repository.findAllAsReadView();
 	}
 
 	@Transactional
@@ -46,8 +45,7 @@ public class LevodopaMedicineAppService {
 		repository.delete( LevodopaMedicineId.ofNotNull( id ) );
 	}
 
-	public LevodopaMedicineDTO findById(String id) {
-		final var found = repository.findOrFail( LevodopaMedicineId.ofNotNull( id ) );
-		return LevodopaMedicineDTO.of( found );
+	public LevodopaMedicineReadView findById(String id) {
+		return repository.findByIdAsReadView( LevodopaMedicineId.ofNotNull( id ) );
 	}
 }

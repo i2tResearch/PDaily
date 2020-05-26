@@ -73,10 +73,25 @@ public class FoodScheduleResourceIT implements IDataSetDependent {
 	}
 
 	@Test
-	@DisplayName("Fail saves a new food schedule")
+	@DisplayName("Fail saves a new food schedule by bad schedule format")
 	void failSaveFoodSchedule() {
 		final var dto = FoodScheduleDTO.of(
 				null, PhysicalEventTesting.PATIENT_ID, "12-00"
+		);
+		given().contentType( MediaType.APPLICATION_JSON )
+				.body( dto )
+				.log().body()
+				.post( "/schedule/food" )
+				.then()
+				.log().body()
+				.statusCode( 400 );
+	}
+
+	@Test
+	@DisplayName("Fail saves a new food schedule by dupplicated schedule")
+	void failSaveFoodScheduleByDupplicatedSchedule() {
+		final var dto = FoodScheduleDTO.of(
+				null, PhysicalEventTesting.PATIENT_ID, "20:00"
 		);
 		given().contentType( MediaType.APPLICATION_JSON )
 				.body( dto )
