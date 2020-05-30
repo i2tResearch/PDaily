@@ -58,6 +58,8 @@ public enum DataSets implements IDataSet {
 	AUTHORIZATION( "datasets/security/authorization.sql", USERS ),
 	PICK_LIST_SERVICE( "datasets/market_measurement/picklist_service.sql" ),
 	MARKET_ATTRIBUTE_DASHBOARD( "datasets/analytics/market-attribute-dashboard.sql", CONTACT ),
+
+	PATIENTS( "datasets/business/patients.sql" ),
 	BODY_PARTS( "datasets/events/body_parts.sql" ),
 	INJURY_TYPES( "datasets/events/injury_type.sql" ),
 	PHYSICAL_EVENTS( "datasets/events/physical_event.sql", BODY_PARTS, INJURY_TYPES ),
@@ -69,7 +71,8 @@ public enum DataSets implements IDataSet {
 	FOOD_SCHEDULE( "datasets/schedules/food_schedule.sql" ),
 	LEVODOPA_SCHEDULE( "datasets/schedules/levodopa_schedules.sql", LEVODOPA_MEDICINE ),
 	ROUTINE_TYPE( "datasets/clinical.base/routine_type.sql" ),
-	ROUTINE_SCHEDULE( "datasets/schedules/routine_schedule.sql", ROUTINE_TYPE );
+	ROUTINE_SCHEDULE( "datasets/schedules/routine_schedule.sql", ROUTINE_TYPE ),
+	LEVODOPA_EVENT( "datasets/events/levodopa_events.sql", LEVODOPA_MEDICINE );
 
 	private final String fileName;
 	private final IDataSet[] deps;

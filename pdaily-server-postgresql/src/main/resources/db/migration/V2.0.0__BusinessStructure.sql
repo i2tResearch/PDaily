@@ -180,3 +180,11 @@ CREATE TABLE IF NOT EXISTS bs_business_units_sellers
     FOREIGN KEY (sales_rep_id) REFERENCES bs_sales_reps (id),
     FOREIGN KEY (business_id) REFERENCES bs_business_units (id)
 );
+
+
+CREATE TABLE IF NOT EXISTS bs_patients
+(
+    tenant_id       UUID            NOT NULL,
+    id              UUID            NOT NULL PRIMARY KEY ,
+    full_name       VARCHAR(100)    NOT NULL
+);

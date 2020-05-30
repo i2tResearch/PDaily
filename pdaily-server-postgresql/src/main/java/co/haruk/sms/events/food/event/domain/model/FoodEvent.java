@@ -13,7 +13,7 @@ import co.haruk.sms.common.model.tenancy.PdailyTenantEntity;
 @NamedQuery(name = FoodEvent.findByPatient, query = "SELECT f FROM FoodEvent f WHERE f.tenant = :company AND f.patientId = :patientId")
 public class FoodEvent extends PdailyTenantEntity<FoodEventId> {
 	private static final String PREFIX = "FoodEvent.";
-	public static final String findByPatient = PREFIX + "findByPatientAsReadView";
+	public static final String findByPatient = PREFIX + "findByPatient";
 
 	@EmbeddedId
 	private FoodEventId id;

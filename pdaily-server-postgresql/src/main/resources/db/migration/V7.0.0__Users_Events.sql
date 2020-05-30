@@ -57,3 +57,13 @@ CREATE TABLE IF NOT EXISTS event_animic_events
     ocurrence_date      DATE      NOT NULL,
     FOREIGN KEY (type) REFERENCES cb_animic_types (id)
 );
+
+CREATE TABLE IF NOT EXISTS event_levodopa_events
+(
+    tenant_id           UUID        NOT NULL,
+    id                  UUID        NOT NULL    PRIMARY KEY ,
+    patient_id          UUID        NOT NULL,
+    levodopa_id         UUID        NOT NULL,
+    date                DATE      NOT NULL,
+    FOREIGN KEY (levodopa_id) REFERENCES medicine_levodopa(id)
+);
