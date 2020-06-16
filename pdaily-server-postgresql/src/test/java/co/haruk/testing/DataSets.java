@@ -72,7 +72,8 @@ public enum DataSets implements IDataSet {
 	LEVODOPA_SCHEDULE( "datasets/schedules/levodopa_schedules.sql", LEVODOPA_MEDICINE ),
 	ROUTINE_TYPE( "datasets/clinical.base/routine_type.sql" ),
 	ROUTINE_SCHEDULE( "datasets/schedules/routine_schedule.sql", ROUTINE_TYPE ),
-	LEVODOPA_EVENT( "datasets/events/levodopa_events.sql", LEVODOPA_MEDICINE );
+	LEVODOPA_EVENT( "datasets/events/levodopa_events.sql", LEVODOPA_MEDICINE ),
+	RESUME_DASHBOARD( "datasets/analytics/doctor-dashboard.sql", LEVODOPA_MEDICINE, INJURY_TYPES, BODY_PARTS, ANIMIC_TYPE );
 
 	private final String fileName;
 	private final IDataSet[] deps;

@@ -1,5 +1,6 @@
 package co.haruk.sms.analytics.domain.model;
 
+import java.util.List;
 import java.util.Map;
 
 import javax.json.JsonArray;
@@ -43,6 +44,15 @@ public final class DashboardQuery {
 				IDataSourceProvider.current().getDataSource(),
 				queryString(),
 				StdMappers.JSON(),
+				params
+		);
+	}
+
+	public List<String> readAllAsStringArray(Map<String, Object> params) {
+		return QueryEngine.executeReadQuery(
+				IDataSourceProvider.current().getDataSource(),
+				queryString(),
+				StdMappers.STRING(),
 				params
 		);
 	}

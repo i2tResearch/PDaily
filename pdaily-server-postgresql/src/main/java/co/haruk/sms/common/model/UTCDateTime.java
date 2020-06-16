@@ -1,9 +1,10 @@
 package co.haruk.sms.common.model;
 
 import java.io.Serializable;
-import java.time.DateTimeException;
-import java.time.Instant;
+import java.time.*;
+import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
+import java.time.temporal.TemporalAccessor;
 import java.util.Objects;
 
 import javax.persistence.Column;
@@ -29,6 +30,16 @@ public class UTCDateTime implements Serializable, Comparable<UTCDateTime> {
 		return new UTCDateTime( date );
 	}
 
+	public static UTCDateTime of(String date) {
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern( "dd-MM-yyyy HH:mm:ss" );
+
+		TemporalAccessor temporalAccessor = formatter.parse( date );
+		LocalDateTime localDateTime = LocalDateTime.from( temporalAccessor );
+		ZonedDateTime zonedDateTime = ZonedDateTime.of( localDateTime, ZoneId.systemDefault() );
+		Instant result = Instant.from( zonedDateTime );
+		return new UTCDateTime( result );
+	}
+
 	public static UTCDateTime now() {
 		return new UTCDateTime( Instant.now() );
 	}
@@ -43,6 +54,10 @@ public class UTCDateTime implements Serializable, Comparable<UTCDateTime> {
 
 	public Instant date() {
 		return date;
+	}
+
+	public int dayOfWeek() {
+		return date.atZone( ZoneId.systemDefault() ).getDayOfWeek().getValue();
 	}
 
 	public Long dateAsLong() {
