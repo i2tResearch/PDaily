@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>co.haruk.sms</groupId>
-    <artifactId>sms-server</artifactId>
+    <groupId>co.icesi.pdaily</groupId>
+    <artifactId>pdaily-server</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
@@ -19,9 +19,9 @@
         <maven.javadoc.skip>true</maven.javadoc.skip>
         <version.synekus.framework>2020.523.1128</version.synekus.framework>
         <version.postgresql>42.2.12</version.postgresql>
-        <version.flyway>6.4.1</version.flyway>
+        <version.flyway>6.5.0</version.flyway>
         <version.jboss-vfs>3.2.15.Final</version.jboss-vfs>
-        <version.quarkus>1.4.2.Final</version.quarkus>
+        <version.quarkus>1.7.2.Final</version.quarkus>
         <version.awaitility>4.0.2</version.awaitility>
         <version.jacoco>0.8.5</version.jacoco>
         <version.jakarta-ejb>3.2.6</version.jakarta-ejb>

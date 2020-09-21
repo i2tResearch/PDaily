@@ -1,6 +1,6 @@
 === IDE Config and Code Style
 
-HARUK tiene un estilo de formato del codigo que se hace cumplir a través del proceso de compilación en maven.
+PDAILY tiene un estilo de formato del codigo que se hace cumplir a través del proceso de compilación en maven.
 
 La aplicación del estilo se realiza usando el plugin de `Eclipse code formatter`, usando los archivos en la carpeta `ide-config`.
 
