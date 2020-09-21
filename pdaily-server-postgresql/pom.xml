@@ -429,7 +429,7 @@
         </profile>
     </profiles>
     <build>
-        <finalName>sms-server</finalName>
+        <finalName>pdaily-server</finalName>
         <pluginManagement>
             <plugins>
                 <plugin>
