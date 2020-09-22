@@ -5,7 +5,7 @@ FROM SALES_ACTIVITIES a
          INNER JOIN SALES_ACTIVITIES_TASKS_DETAILS TAD ON TAD.ACTIVITY_ID = A.ID
          INNER JOIN SALES_ACTIVITIES_TASKS TAS ON TAS.ID = TAD.TASK_ID
 WHERE a.TENANT_ID = '{{tenant_id}}'
-  AND ('{{salesRepId}}' IS NULL OR A.SALES_REP_ID = '{{salesRepId}}')
+  AND ('{{doctorId}}' IS NULL OR A.SALES_REP_ID = '{{doctorId}}')
   AND ('{{businessId}}' IS NULL OR BS.BUSINESS_ID = '{{businessId}}')
   AND A.ACTIVITY_DATE BETWEEN '{{startDate}}' AND '{{endDate}}'
 GROUP BY task

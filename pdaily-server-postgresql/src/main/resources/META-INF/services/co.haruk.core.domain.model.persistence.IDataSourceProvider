@@ -1,1 +1,1 @@
-co.haruk.sms.common.infrastructure.quarkus.QuarkusDataSourceProvider
+co.icesi.pdaily.common.infrastructure.quarkus.QuarkusDataSourceProvider

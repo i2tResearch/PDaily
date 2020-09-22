@@ -16,7 +16,7 @@ FROM BS_CUSTOMERS C
          LEFT JOIN SALES_ACTIVITIES_TASKS_DETAILS TASD on TASD.ACTIVITY_ID = A.ID
          LEFT JOIN SALES_ACTIVITIES_TASKS TAS ON TAS.ID = TASD.TASK_ID
 WHERE A.TENANT_ID = '{{tenant_id}}'
-  AND ('{{salesRepId}}' IS NULL OR A.SALES_REP_ID = '{{salesRepId}}')
+  AND ('{{doctorId}}' IS NULL OR A.SALES_REP_ID = '{{doctorId}}')
   AND ('{{businessId}}' IS NULL OR BS.BUSINESS_ID = '{{businessId}}')
   AND A.ACTIVITY_DATE BETWEEN '{{startDate}}' AND '{{endDate}}'
 ORDER BY date ASC
